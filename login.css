@@ -6,11 +6,12 @@ body {
 
 .fakebg {
     padding: 90px;
-    background: linear-gradient(to bottom, #276fe3, #001e48db);
+    background: linear-gradient(to bottom, #000000,  #ff0000, #276fe3,#002860db, #000000);
+    transition: background 0.5s, transform 0.5s;
+
 }
 
 .form {
-
     margin: auto;
     padding: 50px;
     border: black 2px solid;
@@ -18,12 +19,10 @@ body {
     width: 400px;
     height: auto;
     background-color: #f2f2f2;
-
+    filter: opacity(50%);
+    
 }
 
-.form:hover .fakebg {
-    background: linear-gradient(to bottom, #001e48db, #000000);
-}
 
 input[type="email"],
 input[type="password"] {
@@ -35,7 +34,7 @@ input[type="password"] {
     box-sizing: border-box;
     font-size: 16px;
     box-shadow: none;
-    filter: drop-shadow(black)
+    filter: drop-shadow(black);
 }
 
 input[type="email"]:hover,
