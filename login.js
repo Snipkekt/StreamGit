@@ -19,8 +19,8 @@
 // from.addEventListener('mouseleave', () => {
 //     bg.style.filter = "blur(0px)"
 // })
-const log=document.querySelector(".login");
-log.addEventListner('click',() =>
-{
-    window.location.href ="homepage.html";
+const log = document.querySelector(".login");
+log.addEventListner('click', () => {
+    e.preventDefault();
+    window.location.href = "homepage.html";
 });
