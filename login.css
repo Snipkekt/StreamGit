@@ -6,9 +6,9 @@ body {
 
 .fakebg {
     padding: 90px;
-    background: linear-gradient(to bottom, #000000, #ff0000, #276fe3, #002860db, #000000) ;
+    
     transition: filter 0.5s ease;
-
+    
 }
 
 .form {
