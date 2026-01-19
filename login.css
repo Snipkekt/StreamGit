@@ -6,8 +6,8 @@ body {
 
 .fakebg {
     padding: 90px;
-    background: linear-gradient(to bottom, #000000,  #ff0000, #276fe3,#002860db, #000000);
-    transition: background 0.5s, transform 0.5s;
+    background: linear-gradient(to bottom, #000000, #ff0000, #276fe3, #002860db, #000000) ;
+    transition: filter 0.5s ease;
 
 }
 
@@ -18,11 +18,21 @@ body {
     border-radius: 15px;
     width: 400px;
     height: auto;
-    background-color: #f2f2f2;
-    filter: opacity(50%);
-    
+    background-color: #f2f2f2 opacity(40%) blur(3px);
+    filter: opacity(30%) blur(29%);
+    filter: blur(3px);
+    transition: 0.5s;
+
 }
 
+.form:hover {
+    filter: blur(0px);
+    transition: filter .2s ease; 
+}
+
+.insideMaterial {
+    filter: opacity(100%);
+}
 
 input[type="email"],
 input[type="password"] {
@@ -35,19 +45,17 @@ input[type="password"] {
     font-size: 16px;
     box-shadow: none;
     filter: drop-shadow(black);
+    border: 1.5px solid #727272
+
+
 }
 
 input[type="email"]:hover,
 input[type="password"]:hover {
-    border: 2px solid #276fe3;
-}
-
-button[type="submit"]:hover {
-    background: #184ca0;
-    transition: 0.5s;
-    box-shadow: inset 0 -10px 0 rgba(0, 0, 0, 0.2);
-
-
+    border: 1px solid  #276fe3;
+    border-left-width: 7px;
+    transition: .2s;
+    box-shadow: 0 0 5px black;
 }
 
 button[type="submit"] {
@@ -63,8 +71,18 @@ button[type="submit"] {
     font-family: Arial, sans-serif;
     font-weight: bold;
     box-shadow: inset 10px -10px 30px rgba(0, 0, 0, 0.2);
-    ;
+    transition: .1s;
+}
 
+button[type="submit"]:hover {
+    background: #00365d;
+    transition: .1s;
+    box-shadow: 0 0 7px rgb(0, 0, 0);
+}
+
+button[type="submit"]:active {
+    background: #000000;
+    box-shadow: 0 0 7px rgb(0, 0, 0);
 }
 
 a {
