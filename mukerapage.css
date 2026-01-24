@@ -24,7 +24,7 @@ a {
 
 .navbar {
     grid-area: H;
-    background: linear-gradient(to left, rgb(50, 104, 204), rgb(11, 52, 140) ,black);
+    background: linear-gradient(to left, rgb(11, 52, 140) ,black);
 
     border-radius: 8px;
     text-align: center;
