@@ -44,7 +44,7 @@ a {
 .middle {
 
     border-radius: 8px;
-    background: linear-gradient(to bottom left,  rgb(31, 57, 114), black);
+    background: linear-gradient(to left,  rgb(31, 57, 114), black);
 
     grid-area: M;
 }
