@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     color: white;
-    background: linear-gradient(to top left, purple, rgb(25, 58, 130), black);
+    background: linear-gradient(to top left, rgb(25, 58, 130), black);
 }
 
 a {
@@ -43,7 +43,7 @@ a {
 .middle {
 
     border-radius: 8px;
-    background: linear-gradient(to bottom left,purple ,rgb(25, 58, 130), black);
+    background: linear-gradient(to bottom left ,rgb(25, 58, 130), black);
 
     grid-area: M;
 }
