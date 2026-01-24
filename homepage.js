@@ -30,6 +30,7 @@ async function loadHeroMovie() {
     document.getElementById("hero").style.backgroundPosition = "center";
 
   } catch (error) {
+    
     console.error("Error loading movie:", error);
   }
 }
