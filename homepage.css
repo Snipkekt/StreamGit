@@ -6,6 +6,7 @@ body {
 }
 a{
     color:grey;
+    text-decoration: none;
 }
 #containerGrid {
     display: grid;
