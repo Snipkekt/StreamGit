@@ -9,7 +9,7 @@ body {
     margin: 10px;
     border: 2px solid orange;
     grid-template-columns: 1fr 5fr 1fr 1fr;
-    grid-template-rows: 100px 100vh 1fr 1fr;
+    grid-template-rows: 70px 100vh 1fr 1fr;
     grid-template-areas:
         "H H H H"
         "L M M M"
