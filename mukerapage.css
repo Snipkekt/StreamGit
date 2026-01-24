@@ -22,13 +22,13 @@ a {
         "L M M M";
 }
 
-.navbar {
+.navbar { 
+    padding-left: 30px;
     grid-area: H;
     background: linear-gradient(to left, rgb(31, 57, 114), black);
-
-    border-radius: 8px;
+    border-radius: 40px;
     text-align: center;
-    box-shadow: 0 0 90px rgb(31, 57, 114);
+    box-shadow: 0px 0px 90px rgb(50, 78, 137);
 
 }
 
@@ -38,17 +38,18 @@ a {
     grid-area: L;
     display: grid;
     place-items: center;
-    box-shadow: 0 0 10px rgb(31, 57, 114);
+    box-shadow:inset 0 0 50px rgb(50, 78, 137);
+    box-shadow:inset 0 0 50px rgb(50, 78, 137);
 
 }
 
 .middle {
     padding-left: 40px;
     padding-top: 40px;
-    border-radius: 8px;
+    border-radius: 20px;
     background: linear-gradient(to top left, rgb(31, 57, 114), black);
     grid-area: M;
-    box-shadow: 0 0 10px rgb(31, 57, 114);
+    box-shadow: inset 0 0 50px rgb(50, 78, 137);
 
 }
 
@@ -78,7 +79,7 @@ a {
     grid-template-rows: auto;
     grid-template-areas:
         "one two three four";
-    gap: 150px;
+    gap: 100px;
 }
 
 
