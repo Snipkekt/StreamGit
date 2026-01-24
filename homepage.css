@@ -1,3 +1,35 @@
-body{
-    
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#containerGrid {
+    display: grid;
+    gap: 10px;
+    margin: 10px;
+    border: 2px solid orange;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+    grid-template-rows: 100px 100vh 1fr 1fr;
+    grid-template-areas:
+        "H H H H"
+        "L M M M"
+        "L M M M";
+}
+
+.navbar {
+    grid-area: H;
+    border: 2px solid orange;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.left {
+    border: 2px solid orange;
+    grid-area: L;
+}
+
+.middle {
+    border: 2px solid orange;
+    grid-area: M;
 }

@@ -2,38 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
-
+<link rel="stylesheet" href="homepage.css">
 <body>
-    <header class="navbar">
-  <div class="logo">Streamora</div>
-  <nav class="head">
-    <a href="#">Home</a>
-    <a href="#">Movie</a>
-    <a href="#">Series</a>
-    <a href="#">My List</a>
-  </nav>
- 
-</header>
-<!-- HERO -->
-<section class="hero" id="hero">
-  <div class="hero-content">
-    <h1 id="movie-title"></h1>
+<div id="containerGrid">
+  <section class="navbar">
+    <div class="logo">Streamora</div>
+    <nav class="head">
+      <a href="#">Home</a>
+      <a href="#">Movie</a>
+      <a href="#">Series</a>
+      <a href="#">My List</a>
+    </nav>
+  </section>
+  <section class="left">
+    <a href="#">Left</a>
 
-    <p id="movie-overview"></p>
+  </section>
+  
+  <section class="middle" id="middle">
+    <div class="middle-content">
+      <h1 id="movie-title"></h1>
 
-    <div class="hero-buttons">
-      <button class="btn primary">▶ Watch Now</button>
-      <button class="btn secondary">＋ My List</button>
+      <p id="movie-overview"></p>
+
+      <div class="middle-buttons">
+        <button class="btn primary">▶ Watch Now</button>
+        <button class="btn secondary">＋ My List</button>
+      </div>
+
+      <div class="meta" id="movie-meta"></div>
     </div>
-
-    <div class="meta" id="movie-meta"></div>
-  </div>
-</section>
-<script src="homepage.js"></script>
+  </section></div>
+  <script src="homepage.js"></script>
 </body>
 
 </html>
