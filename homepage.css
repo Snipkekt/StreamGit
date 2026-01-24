@@ -32,9 +32,12 @@ a {
 }
 .left {
     background: linear-gradient(to bottom left ,rgb(25, 58, 130), black);
-
     border-radius: 20px;
     grid-area: L;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 15px;
 }
 
 .middle {
