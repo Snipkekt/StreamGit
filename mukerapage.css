@@ -24,26 +24,27 @@ a {
 
 .navbar {
     grid-area: H;
-    background: linear-gradient(to left,rgb(50, 104, 204), rgb(11, 52, 140),purple);
+    background: linear-gradient(to left, rgb(50, 104, 204), rgb(11, 52, 140), purple);
 
     border-radius: 8px;
     text-align: center;
 
 }
+
 .left {
-    background: linear-gradient(to bottom left ,rgb(25, 58, 130), black);
+    background: linear-gradient(to bottom left, rgb(25, 58, 130), black);
     border-radius: 20px;
     grid-area: L;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     padding: 15px;
 }
 
 .middle {
 
     border-radius: 8px;
-    background: linear-gradient(to bottom left,purple ,rgb(25, 58, 130), black);
+    background: linear-gradient(to bottom left, purple, rgb(25, 58, 130), black);
 
     grid-area: M;
 }
@@ -71,4 +72,11 @@ a {
     display: flex;
     gap: 20px;
 
+}
+
+input[type="search"] {
+    border-radius: 8px;
+    border: none;
+    padding: 6px;
+    margin: 8px;
 }
