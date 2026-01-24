@@ -33,3 +33,7 @@ body {
     border: 2px solid orange;
     grid-area: M;
 }
+.head{
+    display: flex;
+    justify-content: space-around;
+}
