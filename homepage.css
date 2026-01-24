@@ -73,3 +73,9 @@ a {
     gap: 20px;
 
 }
+input[type="search"] {
+    border-radius: 8px;
+    border: none;
+    padding: 6px;
+    margin: 8px;
+}
