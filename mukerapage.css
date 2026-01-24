@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     color: white;
-    background: linear-gradient(to top left, rgb(31, 57, 114), black);
+    background: black;
 }
 
 a {
@@ -28,6 +28,7 @@ a {
 
     border-radius: 8px;
     text-align: center;
+    box-shadow: 0 0 90px rgb(31, 57, 114);
 
 }
 
@@ -37,14 +38,18 @@ a {
     grid-area: L;
     display: grid;
     place-items: center;
+    box-shadow: 0 0 10px rgb(31, 57, 114);
 
 }
 
 .middle {
-
+    padding-left: 40px;
+    padding-top: 40px;
     border-radius: 8px;
     background: linear-gradient(to top left, rgb(31, 57, 114), black);
     grid-area: M;
+    box-shadow: 0 0 10px rgb(31, 57, 114);
+
 }
 
 .head {
@@ -95,10 +100,10 @@ a {
 
 
 
-.search-box,.search-btn {
+.search-box,
+.search-btn {
     border-radius: 50px;
     border: none;
     padding: 6px;
     margin: 8px;
 }
-
