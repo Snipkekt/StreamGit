@@ -24,8 +24,7 @@ a {
 
 .navbar {
     grid-area: H;
-    background: linear-gradient(to left,rgb(50, 104, 204), rgb(11, 52, 140),purple);
-
+    background-color: black;
     border-radius: 8px;
     text-align: center;
 
@@ -38,6 +37,7 @@ a {
     flex-direction: column;
     align-items: left;
     padding: 16px;
+    gap: 10px;
 }
 
 .middle {
@@ -58,6 +58,7 @@ a {
 #logo {
     display: flex;
     align-items: center;
+    padding: 16px;
 }
 
 #logo img {
