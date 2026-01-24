@@ -73,7 +73,21 @@ a {
     gap: 20px;
 
 }
-input[type="search"] {
+
+.search-box{
+    border-radius: 13px;
+    border: none;
+    padding: 6px;
+    margin: 8px;
+}
+
+#tsearch-btn{
+    border-radius: 13px;
+    border: none;
+    margin: 8px;
+}
+
+.search-btn{
     border-radius: 13px;
     border: none;
     padding: 6px;
