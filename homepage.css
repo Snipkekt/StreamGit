@@ -1,13 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    color:white;
-    background: radial-gradient(rgb(25, 58, 130),black);
+    color: white;
+    background: linear-gradient(to top left, purple, rgb(25, 58, 130), black);
 }
-a{
-    color:grey;
+
+a {
+    color: grey;
     text-decoration: none;
 }
+
 #containerGrid {
     display: grid;
     gap: 10px;
@@ -22,40 +24,56 @@ a{
 
 .navbar {
     grid-area: H;
-    border: 2px solid orange;
+    background: linear-gradient(to left, rgb(50, 104, 204), rgb(11, 52, 140), purple);
+transition: 3s;
+    border-radius: 8px;
     text-align: center;
-    
+
+}
+
+.navbar:hover {
+    background: linear-gradient(to right, rgb(50, 104, 204), rgb(11, 52, 140), purple);
+    transition: 3s;
+
+
 }
 
 .left {
-    border: 2px solid orange;
+    background: linear-gradient(to bottom left, rgb(25, 58, 130), black);
+
+    border-radius: 20px;
     grid-area: L;
 }
 
 .middle {
-    border: 2px solid orange;
+
+    border-radius: 8px;
+    background: linear-gradient(to bottom left, purple, rgb(25, 58, 130), black);
+
     grid-area: M;
 }
-.head{
+
+.head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
+
 #logo {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 #logo img {
-  height: 50px;   
-  width: auto;     
-  
+    height: 50px;
+    width: auto;
+
 }
 
-.EPAGE{
-  
+.EPAGE {
+
     display: flex;
-    gap: 20px;  
-   
+    gap: 20px;
+
 }
