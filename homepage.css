@@ -1,8 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+    color:white;
+    background: radial-gradient(rgb(25, 58, 130),black);
 }
-
+a{
+    color:grey;
+}
 #containerGrid {
     display: grid;
     gap: 10px;
