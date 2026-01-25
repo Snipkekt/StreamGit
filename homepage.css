@@ -98,6 +98,9 @@ a {
     background: linear-gradient(to bottom left, rgb(25, 58, 130), black);
     border-radius: 20px;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 
