@@ -19,7 +19,7 @@ a {
     gap: 10px;
     margin: 10px;
     grid-template-columns: 1fr 5fr 1fr 1fr;
-    grid-template-rows: auto 100vh;
+    grid-template-rows: auto   100vh;
     grid-template-areas:
         "H H H H"
         "L M M M";
@@ -111,6 +111,6 @@ a {
     border-radius: 8px;
     padding: 16px;
     width: auto;
-    height: 50%;
+    height: 55%;
     align-items: flex-end;
 }
