@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -6,90 +10,95 @@ body {
 }
 
 a {
-    color: grey;
     text-decoration: none;
 }
+
 
 #containerGrid {
     display: grid;
     gap: 10px;
     margin: 10px;
     grid-template-columns: 1fr 5fr 1fr 1fr;
-    grid-template-rows: auto 100vh 1fr 1fr;
+    grid-template-rows: auto 100vh;
     grid-template-areas:
         "H H H H"
-        "L M M M"
         "L M M M";
 }
+
 
 .navbar {
     grid-area: H;
     background-color: black;
     border-radius: 8px;
-    text-align: center;
-
-}
-.left {
-    background: linear-gradient(to bottom left ,rgb(25, 58, 130), black);
-    border-radius: 20px;
-    grid-area: L;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 16px;
-    gap: 10px;
 }
 
-.middle {
-
-    border-radius: 8px;
-    background: linear-gradient(to bottom left ,rgb(25, 58, 130), black);
-
-    grid-area: M;
-}
 
 .head {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 12px 20px;
 }
+
 
 #logo {
     display: flex;
     align-items: center;
-    padding: 16px;
 }
 
 #logo img {
-    height: 50px;
+    height: 40px;   /* ✅ safe size */
     width: auto;
-
+    display: block;
 }
+
 
 .EPAGE {
-
     display: flex;
     gap: 20px;
-
 }
 
-.search-box{
-    border-radius: 13px;
-    border: none;
-    padding: 6px;
-    margin: 8px;
+.EPAGE a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(255, 255, 255, 0.7); /* ✅ visible on dark */
+    font-weight: 500;
 }
 
-#tsearch-btn{
-    border-radius: 13px;
-    border: none;
-    margin: 8px;
+.EPAGE i {
+    font-size: 14px;
+    opacity: 0.8;
 }
 
-.search-btn{
+
+.EPAGE a:hover {
+    color: white;
+}
+
+.EPAGE a:hover i {
+    opacity: 1;
+}
+
+
+.search-box {
+    padding: 6px 10px;
     border-radius: 13px;
     border: none;
-    padding: 6px;
-    margin: 8px;
+    outline: none;
+}
+
+
+.left {
+    grid-area: L;
+    background: linear-gradient(to bottom left, rgb(25, 58, 130), black);
+    border-radius: 20px;
+    padding: 16px;
+}
+
+
+.middle {
+    grid-area: M;
+    background: linear-gradient(to bottom left, rgb(25, 58, 130), black);
+    border-radius: 8px;
 }
