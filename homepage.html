@@ -1,68 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>StreamFlix - Watch Movies & TV Shows</title>
+  <link rel="stylesheet" href="homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<link rel="stylesheet" href="homepage.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <body>
+  <div id="containerGrid">
+    <!-- Navbar -->
+    <section class="navbar">
+      <nav class="head">
+        <h1 id="logo">
+          <img src="images/image3.png" alt="StreamFlix Logo">
+        </h1>
+        <div class="EPAGE">
+          <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+          <a href="#"><i class="fa-solid fa-clapperboard"></i> Movie</a>
+          <a href="#"><i class="fa-solid fa-tv"></i> Series</a>
+          <a href="#"><i class="fa-regular fa-bookmark"></i> My List</a>
+        </div>
+        <div id="tsearch-btn">
+          <input type="search" placeholder="Search..." class="search-box">
+          <button class="search-btn">🔍</button>
+        </div>
+      </nav>
+    </section>
 
-<div id="containerGrid">
-
-
-  <section class="navbar">
-
-    <nav class="head">
-      <h1 id="logo">
-        <img src="images/image3.png">
-      </h1>
-     
-<div class="EPAGE">
-  <a href="#"><i class="fa-solid fa-house"></i> Home</a>
-  <a href="#"><i class="fa-solid fa-clapperboard"></i> Movie</a>
-  <a href="#"><i class="fa-solid fa-tv"></i> Series</a>
-  <a href="#"><i class="fa-regular fa-bookmark"></i> My List</a>
-</div>
-
-
+    <!-- Sidebar -->
+    <section class="left">
+      <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+      <a href="#"><i class="fa-solid fa-compass"></i> Browse</a>
+      <a href="#"><i class="fa-solid fa-fire"></i> New & Popular</a>
+      <a href="#"><i class="fa-solid fa-layer-group"></i> Genres</a>
+      <a href="#"><i class="fa-solid fa-gear"></i> Setting</a>
+    </section>
     
-      <div id="tsearch-btn">
-      <input type="search" placeholder="Search..." class="search-box">
-       <button class="search-btn">🔍</button>
-      </div>
-    </nav>
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <!-- Smaller Hero Banner -->
+      <section class="hero-banner" id="hero-banner">
+        <div class="hero-content">
+          <h1 id="movie-title">Loading...</h1>
+          <p id="movie-overview">Loading movie description...</p>
+          <div class="hero-buttons">
+            <button class="btn primary">▶ Watch Now</button>
+            <button class="btn secondary">＋ My List</button>
+          </div>
+          <div class="movie-meta" id="movie-meta">
+            <!-- Will be filled by JS -->
+          </div>
+        </div>
+      </section>
 
-  </section>
+      <!-- Trending Now Section -->
+      <section class="content-section trending-section">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-fire"></i> Trending Now</h2>
+          <a href="#" class="see-all">See All <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="cards-container" id="trending-cards">
+          <!-- Will be filled by JS -->
+        </div>
+      </section>
 
-  <section class="left">
-    <a href="#">Profile</a>
-    <a href="#">Browse</a>
-    <a href="#">New & Popular</a>
-    <a href="#">Geners</a>
-    <a href="#">Setting</a>
-
-
-  </section>
+      <!-- TV Series Section -->
+      <section class="content-section tv-series-section">
+        <div class="section-header">
+          <h2><i class="fa-solid fa-tv"></i> Popular TV Series</h2>
+          <a href="#" class="see-all">See All <i class="fa-solid fa-chevron-right"></i></a>
+        </div>
+        <div class="cards-container" id="tv-series-cards">
+          <!-- Will be filled by JS -->
+        </div>
+      </section>
+    </main>
+  </div>
   
-  <section class="middle" id="middle">
-    <div class="middle-content">
-      <h1 id="movie-title"></h1>
-
-      <p id="movie-overview"></p>
-
-      <div class="middle-buttons">
-        <button class="btn primary">▶ Watch Now</button>
-        <button class="btn secondary">＋ My List</button>
-        <a href="mukerpage.html">OOOOOO</a>
-      </div>
-
-      <div class="meta" id="movie-meta"></div>
-    </div>
-  </section></div>
   <script src="homepage.js"></script>
 </body>
 </html>
