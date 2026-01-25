@@ -22,7 +22,7 @@ async function loadHeroMovie() {
       `⭐ ${movie.vote_average.toFixed(1)} | ${movie.release_date.slice(0, 4)}`;
 
     // Set hero background image
-    document.getElementById("").style.backgroundImage =
+    document.getElementById("middle").style.backgroundImage =
       `linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.3)),
        url(${IMG_URL}${movie.backdrop_path})`;
 
