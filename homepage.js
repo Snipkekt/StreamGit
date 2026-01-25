@@ -22,12 +22,12 @@ async function loadHeroMovie() {
       `⭐ ${movie.vote_average.toFixed(1)} | ${movie.release_date.slice(0, 4)}`;
 
     // Set hero background image
-    document.getElementById("hero").style.backgroundImage =
+    document.getElementById("").style.backgroundImage =
       `linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.3)),
        url(${IMG_URL}${movie.backdrop_path})`;
 
-    document.getElementById("hero").style.backgroundSize = "cover";
-    document.getElementById("hero").style.backgroundPosition = "center";
+    document.getElementById("middle").style.backgroundSize = "cover";
+    document.getElementById("middle").style.backgroundPosition = "center";
 
   } catch (error) {
     
