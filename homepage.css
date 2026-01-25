@@ -28,7 +28,7 @@ a {
 
 .navbar {
     grid-area: H;
-    background-color: black;
+ background-image: url('images/bannerimage.jpg'); 
     border-radius: 8px;
 }
 
