@@ -130,3 +130,15 @@ a {
 }
 
 /* ----------------------------------------------------------------- */
+.movie-item {
+    display: flex;
+    flex-direction: column; /* image on top, title below */
+    align-items: center;
+}
+
+.movie-title {
+    margin-top: 8px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
