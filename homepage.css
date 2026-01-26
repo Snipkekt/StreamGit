@@ -145,7 +145,7 @@ a {
     grid-area: sidebar;
     background: linear-gradient(180deg, rgba(15, 28, 63, 0.9) 0%, rgba(0, 0, 0, 0.9) 100%);
     padding: 25px 0;
-ss    display: flex;
+    display: flex;
     flex-direction: column;
     gap: 5px;
     overflow-y: auto;
@@ -176,7 +176,7 @@ ss    display: flex;
     background: linear-gradient(135deg, rgba(15, 28, 63, 0.8) 0%, rgba(0, 0, 0, 0.9) 100%);
     overflow-y: auto;
     padding: 0;
-        box-shadow: inset 0 0 100px black;
+    box-shadow: inset 0 0 100px black;
 
 }
 
