@@ -5,7 +5,7 @@ const movies = [
     // add more
 ];
 
-const container = document.getElementById('thumbnails-container');
+const container = document.getElementById('thumbCont');
 
 movies.forEach(movie => {
     const img = document.createElement('img');
