@@ -24,13 +24,18 @@ a {
 .navbar {
     grid-area: H;
     padding-left: 30px;
-    background: linear-gradient(to left, rgb(31, 57, 114), black);
     border-radius: 0 0 40px 40px;
     box-shadow: inset 0px 0px 30px rgb(50, 78, 137);
     position: sticky;
     top: 0;
     z-index: 100;
     margin-top: 0;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+
+
 }
 
 .left {
