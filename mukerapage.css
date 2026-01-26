@@ -13,9 +13,8 @@ a {
 #containerGrid {
     display: grid;
     gap: 10px;
-    margin: 10px;
     grid-template-columns: 1fr 5fr 1fr 1fr;
-    grid-template-rows: auto 100vh 1fr 1fr;
+    grid-template-rows: 90px 650px 1fr;
     grid-template-areas:
         "H H H H"
         "L M M M"
@@ -23,26 +22,33 @@ a {
 }
 
 .navbar {
-    padding-left: 30px;
     grid-area: H;
+    padding-left: 30px;
     background: linear-gradient(to left, rgb(31, 57, 114), black);
-    border-radius: 40px;
-    text-align: center;
+    border-radius: 0 0 40px 40px;
     box-shadow: inset 0px 0px 30px rgb(50, 78, 137);
-
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-top: 0;
 }
 
 .left {
+    display:flex;
+    flex-direction: column;
     background: linear-gradient(to top, rgb(31, 57, 114), black);
     border-radius: 20px;
-    grid-area: L;
     display: grid;
     place-items: center;
     box-shadow: inset 0 0 20px rgb(50, 78, 137);
+    position: sticky;
+    top:100px;
+    z-index: 99;
 
 }
 
 .middle {
+    gap: 10px;
     padding-left: 40px;
     padding-top: 40px;
     border-radius: 20px;
@@ -133,9 +139,11 @@ a {
 /* div for each movie */
 .movie-item {
     display: flex;
-    flex-direction: column; /* image on top, title below */
+    flex-direction: column;
+    /* image on top, title below */
     align-items: center;
 }
+
 /*movie title for each movie under it*/
 .movie-title {
     margin-top: 8px;
