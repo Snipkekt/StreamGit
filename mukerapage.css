@@ -130,12 +130,13 @@ a {
 }
 
 /* ----------------------------------------------------------------- */
+/* div for each movie */
 .movie-item {
     display: flex;
     flex-direction: column; /* image on top, title below */
     align-items: center;
 }
-
+/*movie title for each movie under it*/
 .movie-title {
     margin-top: 8px;
     font-size: 16px;
