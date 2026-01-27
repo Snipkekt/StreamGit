@@ -60,7 +60,7 @@ a {
     padding-left: 40px;
     padding-top: 40px;
     border-radius: 20px;
-    background: linear-gradient(to left, rgb(31, 57, 114), black);
+    background: linear-gradient(to left, rgb(20, 38, 75), black);
     grid-area: M;
     box-shadow: inset 0px 0px 50px rgb(0, 0, 0);
 
@@ -81,6 +81,27 @@ a {
     height: 50px;
     width: auto;
 
+}
+
+.btn {
+    border: 0px;
+    color: white;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(19, 36, 71), rgb(9, 18, 35));
+    transition: 0.1s;
+}
+
+.btn.primary {
+    margin-left: 0px;
+
+}
+
+.btn:hover {
+    background: rgb(49, 100, 201);
+    transform: scale(1.1);
+    box-shadow: 0 0px 40px rgba(105, 155, 255, 0.512);
 }
 
 /* .EPAGE {
@@ -140,7 +161,7 @@ a {
     border: none;
     padding: 13px;
     margin: 8px;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 .search-box:hover,
@@ -181,7 +202,7 @@ a {
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
-    transition: transform 0.3s;
+    transition: transform 0.1s;
     box-shadow: 0 0 20px black;
 
 }
@@ -196,7 +217,7 @@ a {
 #topsearch {
     margin-right: auto;
     align-items: 0px;
-    
+
 }
 
 /* ----------------------------------------------------------------- */

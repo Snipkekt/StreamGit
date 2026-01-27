@@ -1,10 +1,10 @@
 const movies = [
-    { title: "The Lost Kingdom", thumb: "ghosted/image.jpg" },
-    { title: "Space Odyssey", thumb: "ghosted/image.jpg" },
-    { title: "Midnight Chase", thumb: "ghosted/image.jpg" },
-    { title: "Hidden Secrets", thumb: "ghosted/image.jpg" },
-    { title: "Galaxy Wars", thumb: "ghosted/image.jpg" },
-    { title: "Silent Night", thumb: "ghosted/image.jpg" }
+    { title: "The Lost Kingdom", thumb: "ghosted/123.jpg" },
+    { title: "Space Odyssey", thumb: "ghosted/123.jpg" },
+    { title: "Midnight Chase", thumb: "ghosted/123.jpg" },
+    { title: "Hidden Secrets", thumb: "ghosted/123.jpg" },
+    { title: "Galaxy Wars", thumb: "ghosted/123.jpg" },
+    { title: "Silent Night", thumb: "ghosted/123.jpg" }
 ];
 
 const container = document.getElementById('thumbCont');
