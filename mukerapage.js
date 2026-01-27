@@ -19,7 +19,8 @@ const container = document.getElementById('thumbCont');
 movies1.forEach(movie => {
     const movieDiv = document.createElement('div');
     movieDiv.className = 'movie-item';
-
+    const Type = document.createElement('h2')
+    Type.textContent = "abebe";
     const img = document.createElement('img');
     img.src = movie.thumb;
     img.alt = movie.title;
@@ -28,6 +29,8 @@ movies1.forEach(movie => {
     const title = document.createElement('p');
     title.textContent = movie.title;
     title.className = 'movie-title';
+    
+
 
     movieDiv.appendChild(img);
     movieDiv.appendChild(title);
