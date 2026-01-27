@@ -196,7 +196,7 @@ a {
 
 /* -----------------thumbnail part---------------------- */
 #thumbCont {
-    margin-left: 10px;
+    margin:30px;
     display: flex;
     flex-wrap: nowrap;
     gap: 40px;
@@ -209,6 +209,9 @@ a {
 }
 
 .thumbnail {
+        margin-top:30px;
+    margin-left: 5px;
+
     width: 216px;
     height: 324px;
     object-fit: cover;
