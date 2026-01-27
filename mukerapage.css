@@ -3,6 +3,7 @@ body {
     padding: 0;
     color: white;
     background: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 a {
@@ -45,9 +46,11 @@ a {
     display: grid;
     place-items: center;
     box-shadow: inset 0 0 100px black;
-    position: sticky;
+    position: fixed;
     top: 100px;
     z-index: 99;
+    height: 80vh;
+    width: 140px;
 
 }
 
@@ -64,7 +67,6 @@ a {
 
 .head {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
 }
@@ -80,42 +82,84 @@ a {
 
 }
 
-.EPAGE {
+/* .EPAGE {
     display: grid;
-    gap: 20px;
-
-    grid-template-columns: auto;
-    grid-template-rows: auto;
+    place-items: center;
+    height: ;
+    width:70vw;
+    border: 2px solid red;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
     grid-template-areas:
-        "one two three four";
-    gap: 100px;
+        "one two three four sbar sb";
+    gap: 100px ;
+    background-color: blanchedalmond;
+} */
+.EPAGE {
+    
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    margin-left: 40px;
+    gap: 50px;
+    height: 50px;
+    width: 900px;
+    z-index: 101;
 }
 
 
 .one {
     grid-area: one;
+
 }
 
 .two {
     grid-area: two;
+
 }
 
 .three {
     grid-area: three;
+
 }
 
 .four {
     grid-area: four;
+
 }
 
 
 
 .search-box,
 .search-btn {
+    text-align: center;
+    background-color: rgba(66, 66, 66, 0.314);
     border-radius: 50px;
     border: none;
-    padding: 6px;
+    padding: 13px;
     margin: 8px;
+    transition: 0.3s;
+}
+
+.search-box:hover,
+.search-btn:hover {
+    caret-color: white;
+    color: rgb(187, 187, 187);
+    background-color: rgba(66, 66, 66, 0.671);
+    transform: scale(1.01)
+}
+
+.search-box:hover::placeholder,
+.search-btn:hover::placeholder {
+    text-align: center;
+    color: rgb(169, 169, 169);
+}
+.search-box{
+grid-area: sbar;}
+.search-btn {
+    grid-area: sb;
+    box-shadow: 0 0 70px rgb(75, 132, 255);
+    font-size: 18px;
 }
 
 /* -----------------thumbnail part---------------------- */
