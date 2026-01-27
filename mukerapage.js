@@ -7,13 +7,13 @@ const movies1 = [
     { title: "Galaxy Wars", thumb: "ghosted/123.jpg" },
     { title: "Silent Night", thumb: "ghosted/123.jpg" }
 ];
-const catagory=[
-    {GenreName:"Trending", genreList:movies1[0]},
-    {GenreName:"Trending", genreList:movies1[0]},
-    {GenreName:"Trending", genreList:movies1[0]},
-    {GenreName:"Trending", genreList:movies1[0]},
-    {GenreName:"Trending", genreList:movies1[0]},
-];
+// const catagory=[
+//     {GenreName:"Trending", genreList:movies1[0]},
+//     {GenreName:"Trending", genreList:movies1[0]},
+//     {GenreName:"Trending", genreList:movies1[0]},
+//     {GenreName:"Trending", genreList:movies1[0]},
+//     {GenreName:"Trending", genreList:movies1[0]},
+// ];
 const container = document.getElementById('thumbCont');
 
 movies1.forEach(movie => {
