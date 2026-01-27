@@ -47,15 +47,13 @@ a {
     flex-direction: row;
     transition: 0.2s;
     min-width: 50px;
+    max-width: 0px;
 
 }
-
 .navbar a:hover {
     color: white;
     background: rgba(255, 255, 255, 0.047);
-
 }
-
 .left {
     padding-top: 40px;
 
