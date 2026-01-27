@@ -14,7 +14,7 @@ a {
 #containerGrid {
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 10fr;
+    grid-template-columns: 140px 10fr;
     grid-template-rows: 90px 1fr;
     grid-template-areas:
         "H H"
@@ -63,6 +63,10 @@ a {
     background: linear-gradient(to left, rgb(20, 38, 75), black);
     grid-area: M;
     box-shadow: inset 0px 0px 50px rgb(0, 0, 0);
+    overflow: hidden;
+    max-width: 100%;
+
+
 
 }
 
@@ -95,6 +99,9 @@ a {
 
 .btn.primary {
     margin-left: 0px;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0 0 90px rgba(82, 117, 232, 0.684);
 
 }
 
@@ -194,10 +201,11 @@ a {
     flex-wrap: nowrap;
     gap: 40px;
     margin-top: 50px;
-    overflow-x: auto;         /* horizontal scroll */
+    overflow-x: auto;
     overflow-y: hidden;
-    max-width: 1300px;         /* fit inside middle section */
-    padding-bottom: 10px; 
+    max-width: 100%;
+    
+
 }
 
 .thumbnail {
