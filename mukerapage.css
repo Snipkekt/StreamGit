@@ -287,3 +287,26 @@ a {
     text-align: center;
     color: white;
 }
+
+/* ---------------------scrollbar effects---------------------------------- */
+#thumbCont::-webkit-scrollbar {
+    opacity: 50%;
+    height: 14px;
+
+}
+#thumbCont::-webkit-scrollbar:hover {
+    height: 14px;
+    opacity: 100%;
+}
+
+#thumbCont::-webkit-scrollbar-track {
+    background: rgba(17, 37, 65, 0.537);
+    border-radius: 10px;
+
+}
+
+#thumbCont::-webkit-scrollbar-thumb {
+    background: rgba(37, 77, 137, 0.7);
+    width: 90px;
+    border-radius: 10px;
+}
