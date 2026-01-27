@@ -191,9 +191,13 @@ a {
 /* -----------------thumbnail part---------------------- */
 #thumbCont {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 40px;
     margin-top: 50px;
+    overflow-x: auto;         /* horizontal scroll */
+    overflow-y: hidden;
+    max-width: 1300px;         /* fit inside middle section */
+    padding-bottom: 10px; 
 }
 
 .thumbnail {
@@ -204,7 +208,6 @@ a {
     cursor: pointer;
     transition: transform 0.1s;
     box-shadow: 0 0 20px black;
-
 }
 
 .thumbnail:hover {
