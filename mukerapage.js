@@ -1,4 +1,4 @@
-const movies = [
+const movies1 = [
     { title: "The Lost Kingdom", thumb: "ghosted/123.jpg" },
     { title: "Space Odyssey", thumb: "ghosted/123.jpg" },
     { title: "Midnight Chase", thumb: "ghosted/123.jpg" },
@@ -9,7 +9,7 @@ const movies = [
 
 const container = document.getElementById('thumbCont');
 
-movies.forEach(movie => {
+movies1.forEach(movie => {
     const movieDiv = document.createElement('div');
     movieDiv.className = 'movie-item';
 

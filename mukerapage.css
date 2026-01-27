@@ -25,7 +25,7 @@ a {
 .navbar {
     grid-area: H;
     padding-left: 30px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 0;
     box-shadow: inset 0px 0px 20px rgba(50, 78, 137, 0.514);
     position: sticky;
     top: 0;
@@ -37,22 +37,60 @@ a {
 
 }
 
-.left {
+.navbar a {
+    border-radius: 90px;
+    gap: 500px;
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+    place-items: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    transition: 0.2s;
+
+}
+
+.navbar a:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.047);
+
+}
+
+.left {
+    padding-top: 40px;
+
     /* background: linear-gradient(to bottom, rgb(21, 39, 79), black); */
     background: rgb(15, 28, 56);
     border-radius: 0px 20px 20px 0px;
-    display: grid;
-    place-items: center;
     box-shadow: inset -60px 0 100px black;
     position: fixed;
-    top: 100px;
+    top: 80px;
     z-index: 99;
-    height: 85vh;
+    height: 100%;
     width: 140px;
 
 }
+
+.left a {
+    border-radius: 90px;
+    gap: 500px;
+    background: rgba(255, 255, 255, 0);
+    padding: 20px;
+    margin: 20px;
+    margin-left: 3px;
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    transition: 0.2s;
+
+}
+
+.left a:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.047);
+
+}
+
 
 .middle {
     gap: 10px;
@@ -196,20 +234,19 @@ a {
 
 /* -----------------thumbnail part---------------------- */
 #thumbCont {
-    margin:30px;
+    margin: 30px;
     display: flex;
     flex-wrap: nowrap;
     gap: 40px;
-    margin-top: 50px;
     overflow-x: auto;
     overflow-y: hidden;
     max-width: 100%;
-    
+
 
 }
 
 .thumbnail {
-        margin-top:30px;
+    margin-top: 30px;
     margin-left: 5px;
 
     width: 216px;
@@ -224,7 +261,7 @@ a {
 .thumbnail:hover {
 
     transform: scale(1.05);
-    box-shadow: 0 0 40px black;
+    box-shadow: 0 0px 40px rgba(105, 155, 255, 0.512);
 
 }
 
