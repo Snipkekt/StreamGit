@@ -26,12 +26,11 @@ a {
     grid-area: H;
     padding-left: 30px;
     border-radius: 0 0 20px 20px;
-    box-shadow: inset 0px 0px 20px rgb(50, 78, 137);
+    box-shadow: inset 0px 0px 20px rgba(50, 78, 137, 0.514);
     position: sticky;
     top: 0;
     z-index: 100;
     margin-top: 0;
-    position: sticky;
     top: 0;
     backdrop-filter: blur(20px);
 
@@ -197,6 +196,7 @@ a {
 
 /* -----------------thumbnail part---------------------- */
 #thumbCont {
+    margin-left: 10px;
     display: flex;
     flex-wrap: nowrap;
     gap: 40px;
