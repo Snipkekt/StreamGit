@@ -25,9 +25,10 @@ a {
 .navbar {
     grid-area: H;
     padding-left: 30px;
-    border-radius: 0 0 20px 0;
+    border-radius: 0 0 20px 20px;
     box-shadow: inset 0px 0px 20px rgba(50, 78, 137, 0.514);
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 100;
     margin-top: 0;
@@ -39,7 +40,6 @@ a {
 
 .navbar a {
     border-radius: 90px;
-    gap: 500px;
     background: rgba(255, 255, 255, 0);
     padding: 20px;
     place-items: center;
