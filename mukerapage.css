@@ -307,3 +307,59 @@ a {
     background-size: cover;
 z-index: 102;}
 /*css*/
+
+/* ------------------ HERO BANNER ------------------ */
+.middle .banner-title {
+    position: relative;
+    height: 60vh; /* adjust as needed */
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: inset 0 0 50px black;
+}
+
+.middle .banner-title::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("images/b3.jpg"); /* your Justice League image */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.6); /* makes text visible */
+    z-index: 0;
+}
+
+.middle .banner-content {
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+    max-width: 600px;
+    color: white;
+}
+
+.middle .banner-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.middle .banner-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+/* Movie meta info */
+.middle .banner-content .movie-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Hero buttons */
+.middle .banner-content .btn {
+    margin-right: 15px;
+}
