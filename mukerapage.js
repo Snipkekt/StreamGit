@@ -29,7 +29,7 @@ const allMovie = [
     { title: "The Witcher", thumb: "ghosted/123.jpg", categories: ["series"] },
     { title: "Breaking Bad", thumb: "ghosted/123.jpg", categories: ["series"] },
     { title: "Rick and Morty", thumb: "ghosted/123.jpg", categories: ["series", "animation"] },
-    { title: "Spider-Man: Into the Spider-Verse", thumb: "ghosted/123.jpg", categories: ["animation"] },
+    { title: "Spider-Man <br>Into the Spider-Verse", thumb: "ghosted/123.jpg", categories: ["animation"] },
     { title: "Inside Out", thumb: "ghosted/123.jpg", categories: ["animation"] },
     { title: "Kung Fu Panda", thumb: "ghosted/123.jpg", categories: ["animation"] },
     { title: "The Mandalorian", thumb: "ghosted/123.jpg", categories: ["series", "trending"] },
@@ -51,7 +51,7 @@ function renderMovies(list, container) {
         img.className = 'thumbnail';
 
         const title = document.createElement('p');
-        title.textContent = movie.title;
+        title.innerHTML = movie.title;
         title.className = 'movie-title';
 
         movieDiv.appendChild(img);
