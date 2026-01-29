@@ -7,7 +7,7 @@ const allMovie = [
     { title: "The Dark Knight", thumb: "ghosted/123.jpg", categories: ["movie"] },
     { title: "Gladiator", thumb: "ghosted/123.jpg", categories: ["movie"] },
     { title: "Raya and the Last Dragon", thumb: "ghosted/123.jpg", categories: ["animation"] },
-    { title: "Avengers: Endgame", thumb: "image/MovieThumbs/Avengers_Endgame.jpg", categories: ["movie", "trending"] },
+    { title: "Avengers: Endgame", thumb: "image/MovieThumbs/AvengersEndgame.jpg", categories: ["movie", "trending"] },
     { title: "Titanic", thumb: "ghosted/123.jpg", categories: ["movie"] },
     { title: "Encanto", thumb: "ghosted/123.jpg", categories: ["animation"] },
     { title: "The Matrix", thumb: "ghosted/123.jpg", categories: ["movie"] },

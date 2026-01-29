@@ -197,15 +197,19 @@ a {
 }
 
 .thumbnail {
+    filter:saturate(0.5);
     width: 216px;
     height: 324px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
     cursor: pointer;
     transition: transform 0.1s;
-    box-shadow: inset 0 0 20px black;
+    box-shadow: inset 0 0 80px black;
 }
+.thumbnail:hover{
+    filter:saturate(1);
 
+}
 /* .thumbnail:hover { transform: scale(1.05); box-shadow: 0 -10px 40px rgba(105, 155, 255, 0.512); } */
 #topsearch {
     display: flex;
@@ -225,11 +229,14 @@ a {
     width: 216px;
     /*just like the .thumbnail*/
     background: #70707010;
-    border-radius: 50px;
+    border-radius:10px 10px 50px 50px ;
     transition: 0.2s;
     margin-right: 30px;
 }
-
+.movie-item:hover {
+    transform: scale(1.05);
+    box-shadow: inset 0 -5px 10px rgba(137, 175, 249, 0.295);
+}
 #trendingCont,
 #moviesCont,
 #seriesCont,
@@ -245,12 +252,6 @@ a {
     border-radius: 50px 50px 9px 9px;
 
 }
-
-.movie-item:hover {
-    transform: scale(1.05);
-    box-shadow: inset 0 -5px 10px rgba(137, 175, 249, 0.295);
-}
-
 /*movie title for each movie under it*/
 .movie-title {
     width: 216px;
