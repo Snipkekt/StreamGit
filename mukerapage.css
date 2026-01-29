@@ -3,7 +3,11 @@ body {
     padding: 0;
     color: white;
     background: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
 }
 
 a {
@@ -16,10 +20,7 @@ a {
     gap: 10px;
     grid-template-columns: 140px 10fr;
     grid-template-rows: 90px 1fr;
-    grid-template-areas:
-        "H H"
-        "L M"
-        "L M";
+    grid-template-areas: "H H" "L M" "L M";
 }
 
 .navbar {
@@ -34,8 +35,6 @@ a {
     margin-top: 0;
     top: 0;
     backdrop-filter: blur(20px);
-
-
 }
 
 .navbar a {
@@ -48,7 +47,6 @@ a {
     transition: 0.2s;
     min-width: 50px;
     max-width: 0px;
-
 }
 
 .navbar a:hover {
@@ -58,7 +56,6 @@ a {
 
 .left {
     padding-top: 40px;
-
     /* background: linear-gradient(to bottom, rgb(21, 39, 79), black); */
     background: rgb(15, 28, 56);
     border-radius: 0px 20px 20px 0px;
@@ -68,7 +65,6 @@ a {
     z-index: 99;
     height: 100%;
     width: 140px;
-
 }
 
 .left a {
@@ -83,15 +79,12 @@ a {
     flex-direction: column;
     width: 100px;
     transition: 0.2s;
-
 }
 
 .left a:hover {
     color: white;
     background: rgba(255, 255, 255, 0.047);
-
 }
-
 
 .middle {
     gap: 10px;
@@ -103,15 +96,11 @@ a {
     box-shadow: inset 0px 0px 50px rgb(0, 0, 0);
     overflow: hidden;
     max-width: 100%;
-
-
-
 }
 
 .head {
     display: flex;
     align-items: center;
-
 }
 
 #logo {
@@ -122,7 +111,6 @@ a {
 #logo img {
     height: 50px;
     width: auto;
-
 }
 
 .btn {
@@ -140,7 +128,6 @@ a {
     font-size: large;
     font-weight: bold;
     box-shadow: 0 0 90px rgba(82, 117, 232, 0.684);
-
 }
 
 .btn:hover {
@@ -149,21 +136,8 @@ a {
     box-shadow: 0 0px 40px rgba(105, 155, 255, 0.512);
 }
 
-/* .EPAGE {
-    display: grid;
-    place-items: center;
-    height: ;
-    width:70vw;
-    border: 2px solid red;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
-    grid-template-areas:
-        "one two three four sbar sb";
-    gap: 100px ;
-    background-color: blanchedalmond;
-} */
+/* .EPAGE { display: grid; place-items: center; height: ; width:70vw; border: 2px solid red; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: 1fr ; grid-template-areas: "one two three four sbar sb"; gap: 100px ; background-color: blanchedalmond; } */
 .EPAGE {
-
     display: flex;
     flex-direction: row;
     place-items: center;
@@ -174,29 +148,7 @@ a {
     z-index: 101;
 }
 
-
-/* .one {
-    grid-area: one;
-
-}
-
-.two {
-    grid-area: two;
-
-}
-
-.three {
-    grid-area: three;
-
-}
-
-.four {
-    grid-area: four;
-
-} */
-
-
-
+/* .one { grid-area: one; } .two { grid-area: two; } .three { grid-area: three; } .four { grid-area: four; } */
 .search-box,
 .search-btn {
     background-color: rgba(66, 66, 66, 0.314);
@@ -206,7 +158,6 @@ a {
     padding: 13px;
     margin: 8px;
     transition: 0.2s;
-
 }
 
 .search-box:hover,
@@ -215,20 +166,14 @@ a {
     color: rgb(187, 187, 187);
     background-color: rgba(66, 66, 66, 0.671);
     transform: scale(1.05);
-
 }
-
-
 
 .search-box:hover::placeholder,
 .search-btn:hover::placeholder {
     color: rgb(169, 169, 169);
 }
 
-/* .search-box {
-    grid-area: sbar;
-} */
-
+/* .search-box { grid-area: sbar; } */
 .search-btn {
     /* grid-area: sb; */
     box-shadow: 0 0 70px rgb(75, 132, 255);
@@ -247,12 +192,9 @@ a {
     box-shadow: inset 0 0 20px black;
     border-radius: 50px 50px 9px 9px;
     /* background: linear-gradient(to bottom,rgb(10, 13, 20),rgb(21, 38, 69)); */
-
-
 }
 
 .thumbnail {
-
     width: 216px;
     height: 324px;
     object-fit: cover;
@@ -262,13 +204,7 @@ a {
     box-shadow: inset 0 0 20px black;
 }
 
-/* .thumbnail:hover {
-
-    transform: scale(1.05);
-    box-shadow: 0 -10px 40px rgba(105, 155, 255, 0.512);
-
-} */
-
+/* .thumbnail:hover { transform: scale(1.05); box-shadow: 0 -10px 40px rgba(105, 155, 255, 0.512); } */
 #topsearch {
     display: flex;
     margin-right: 40px;
@@ -291,10 +227,8 @@ a {
 }
 
 .movie-item:hover {
-
     transform: scale(1.05);
     box-shadow: inset 0 -5px 10px rgba(137, 175, 249, 0.295);
-
 }
 
 /*movie title for each movie under it*/
@@ -308,17 +242,15 @@ a {
     color: white;
 }
 
-.movie-item:hover .movie-title{
+.movie-item:hover .movie-title {
     transition: 0.4s;
     transform: scale(1.12);
 }
-
 
 /* ---------------------scrollbar effects---------------------------------- */
 #thumbCont::-webkit-scrollbar {
     opacity: 50%;
     height: 14px;
-
 }
 
 #thumbCont::-webkit-scrollbar:hover {
@@ -329,7 +261,6 @@ a {
 #thumbCont::-webkit-scrollbar-track {
     background: rgba(17, 37, 65, 0.537);
     border-radius: 100px;
-
 }
 
 #thumbCont::-webkit-scrollbar-thumb {
@@ -337,3 +268,5 @@ a {
     width: 90px;
     border-radius: 50px;
 }
+
+/*css*/
