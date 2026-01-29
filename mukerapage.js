@@ -7,7 +7,7 @@ const allMovie = [
     { title: "The Dark Knight", thumb: "images/MovieThumbs/The Dark Knight.jpg", categories: ["movie"] },
     { title: "Gladiator", thumb: "images/MovieThumbs/Gladiator.jpg", categories: ["movie"] },
     { title: "Raya and the Last Dragon", thumb: "images/MovieThumbs/Raya and the Last Dragon.jpg", categories: ["animation"] },
-    { title: "Avengers Endgame", thumb: "images/MovieThumbs/Avengers Endgame.jpg", categories: ["movie", "trending"] },
+    { title: "Avengers Endgame", thumb: "images/MovieThumbs/AvengersEndgame.jpg", categories: ["movie", "trending"] },
     { title: "Titanic", thumb: "images/MovieThumbs/Titanic.jpg", categories: ["movie"] },
     { title: "Encanto", thumb: "images/MovieThumbs/Encanto.jpg", categories: ["animation"] },
     { title: "The Matrix", thumb: "images/MovieThumbs/The Matrix.jpg", categories: ["movie"] },
@@ -37,7 +37,6 @@ const allMovie = [
 
 
 
-const container = document.getElementById('thumbCont');
 
 function renderMovies(list, container) {
     list.forEach(movie => {
