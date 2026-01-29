@@ -274,17 +274,26 @@ a {
     height: 14px;
 }
 
-#thumbCont::-webkit-scrollbar:hover {
+#trendingCont::-webkit-scrollbar:hover,
+#moviesCont::-webkit-scrollbar:hover,
+#seriesCont::-webkit-scrollbar:hover,
+#animationCont::-webkit-scrollbar:hover {
     height: 14px;
     opacity: 100%;
 }
 
-#thumbCont::-webkit-scrollbar-track {
+#trendingCont::-webkit-scrollbar-track,
+#moviesCont::-webkit-scrollbar-track,
+#seriesCont::-webkit-scrollbar-track,
+#animationCont::-webkit-scrollbar-track {
     background: rgba(17, 37, 65, 0.537);
     border-radius: 100px;
 }
 
-#thumbCont::-webkit-scrollbar-thumb {
+#trendingCont::-webkit-scrollbar-thumb,
+#moviesCont::-webkit-scrollbar-thumb,
+#seriesCont::-webkit-scrollbar-thumb,
+#animationCont::-webkit-scrollbar-thumb {
     background: rgba(37, 77, 137, 0.7);
     width: 90px;
     border-radius: 50px;
