@@ -1,5 +1,5 @@
 const allMovie = [
-    { title: "The Chosen", thumb: "image/MovieThumbs/The Chosen.jpg", categories: ["series", "trending"] },
+    { title: "The Chosen", thumb: "/image/MovieThumbs/The Chosen.jpg", categories: ["series", "trending"] },
     { title: "Inception", thumb: "image/MovieThumbs/Inception.jpg", categories: ["movie"] },
     { title: "Soul", thumb: "image/MovieThumbs/Soul.jpg", categories: ["animation", "trending"] },
     { title: "Interstellar", thumb: "image/MovieThumbs/Interstellar.jpg", categories: ["movie", "trending"] },
