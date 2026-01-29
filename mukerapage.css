@@ -316,13 +316,16 @@ z-index: 102;}
     overflow: hidden;
     margin-top: 20px;
     box-shadow: inset 0 0 50px black;
+    display: flex;
+    align-items: flex-end; /* moves content to the bottom */
+    padding-bottom: 40px; /* spacing from bottom */
 }
 
 .middle .banner-title::after {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("images/b3.jpg"); /* your Justice League image */
+    background-image: url("images/Guardians\ of\ the\ Galaxy1.jpg"); /* your updated image */
     background-size: cover;
     background-position: center;
     filter: brightness(0.6); /* makes text visible */
@@ -335,6 +338,8 @@ z-index: 102;}
     padding: 30px;
     max-width: 600px;
     color: white;
+    /* optional: animate text appearing from bottom */
+    transform: translateY(0);
 }
 
 .middle .banner-content h1 {
