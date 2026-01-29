@@ -208,7 +208,7 @@ a {
 }
 .movie-item:hover .thumbnail{
     filter:saturate(1);
-
+    transition: .8s;
 }
 /* .thumbnail:hover { transform: scale(1.05); box-shadow: 0 -10px 40px rgba(105, 155, 255, 0.512); } */
 #topsearch {
@@ -301,5 +301,9 @@ a {
     width: 90px;
     border-radius: 50px;
 }
-
+.middle .banner-title .banner{
+    background:  url("../StreamGit/ghosted/123.jpg");
+    width: 900px;
+    background-size: cover;
+z-index: 102;}
 /*css*/
