@@ -213,17 +213,35 @@ a {
 }
 
 /* ----------------------------------------------------------------- */
-/* div for each movie */
+/* div for each movie Thumb and title mnamn */
 .movie-item {
     margin: 90px 0px 50px 40px;
     display: flex;
     flex-direction: column;
     align-items: left;
     height: 100%;
+    width: 216px;
+    /*just like the .thumbnail*/
     background: #70707010;
     border-radius: 50px;
     transition: 0.2s;
     margin-right: 30px;
+}
+
+#trendingCont,
+#moviesCont,
+#seriesCont,
+#animationCont {
+    margin: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    box-shadow: inset 0 0 20px black;
+    border-radius: 50px 50px 9px 9px;
+
 }
 
 .movie-item:hover {
@@ -248,7 +266,10 @@ a {
 }
 
 /* ---------------------scrollbar effects---------------------------------- */
-#thumbCont::-webkit-scrollbar {
+#trendingCont::-webkit-scrollbar,
+#moviesCont::-webkit-scrollbar,
+#seriesCont::-webkit-scrollbar,
+#animationCont::-webkit-scrollbar {
     opacity: 50%;
     height: 14px;
 }
