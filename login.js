@@ -22,5 +22,5 @@
 const log = document.getElementById("loginBtn");
 log.addEventListener('click', (e)=> {
    e.preventDefault();
-   window.location="mukerpage.html";
+   window.location="homepage.html";
 })
