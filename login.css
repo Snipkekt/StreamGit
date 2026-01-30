@@ -104,11 +104,11 @@ a {
         font-size: 10px;
     }
     .fakebg {
-        padding: 100px;
+        padding: 50px;
     }
 
     .form {
-        padding: 10px;
+        padding: 40px 20px 40px;
         text-align: left;
         filter: blur(0px);
 
