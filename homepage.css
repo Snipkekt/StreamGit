@@ -640,7 +640,7 @@ i {
         gap: 20px;
     }
     .EPAGE{
-        gap:inherit;
+        gap:10px;
     }
 }
 
@@ -735,7 +735,7 @@ i {
     .EPAGE {
         flex-direction: row;
         margin-left: 0;
-        gap: 10px;
+        gap: 0px;
         width: 100%;
         height: auto;
         overflow-x: auto;
