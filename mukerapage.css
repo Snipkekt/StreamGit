@@ -181,6 +181,32 @@ a {
     font-size: 18px;
 }
 
+/*--------addis drop down searchhhhh---------*/
+#topsearch {
+    position: relative;
+}
+
+#searchDropdown {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 220px;
+    background: rgba(20,20,20,0.95);
+    border-radius: 10px;
+    display: none;
+    z-index: 999;
+}
+
+.search-item {
+    padding: 10px;
+    color: lightgrey;
+    cursor: pointer;
+}
+
+.search-item:hover {
+    background: rgba(66, 66, 66, 0.7);
+}
+
 /* -----------------thumbnail part---------------------- */
 #thumbCont {
     margin: 30px;
