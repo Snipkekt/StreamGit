@@ -574,54 +574,6 @@ i {
         transition: opacity 0.3s ease;
     }
 
-    /* Hide navbar icons when search is active */
-    .search-active .navbar .EPAGE {
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    /* Hide logo when search is active */
-    .search-active .navbar #logo {
-        opacity: 0;
-        pointer-events: none;
-    }
-
-    #logo img {
-        transition: opacity 0.3s ease;
-    }
-
-    /* Search appears on top of navbar */
-    .search-box {
-
-    }
-
-    .search-box.active {
-        display: block;
-        animation: slideInTop 0.3s ease;
-    }
-
-
-
-    /* Search button stays in navbar */
-    .search-btn {
-        width: 48px;
-        height: 48px;
-        padding: 13px;
-        font-size: 17px;
-        position: relative;
-        z-index: 107;
-    }
-
-    .EPAGE {
-        margin-left: 10px;
-        gap: 15px;
-        width: auto;
-        overflow-x: auto;
-    }
-
-    #topsearch {
-        margin-right: 20px;
-    }
 
     /* Position search dropdown below search box for tablet */
     #searchDropdown {
@@ -686,6 +638,9 @@ i {
     #thumbCont {
         margin: 20px;
         gap: 20px;
+    }
+    .EPAGE{
+        gap:inherit;
     }
 }
 
@@ -802,17 +757,14 @@ i {
         right: 70px;
         width: auto;
         z-index: 106;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 14px 18px;
-        font-size: 15px;
+        margin: 0 30px 0px 30px;
         box-shadow: 0 5px 30px rgba(0, 0, 0, 0.6);
-        background-color: rgba(66, 66, 66, 0.98);
     }
 
     .search-box.active {
         display: block;
         animation: slideInTop 0.3s ease;
+
     }
 
     @keyframes slideInTop {
@@ -838,8 +790,9 @@ i {
     }
 
     #topsearch {
-        margin-right: 0;
-        gap: 5px;
+        margin-right: 20px;
+        gap: 0px;
+        z-index: 109;
     }
 
     /* Position search dropdown below search box for mobile */
