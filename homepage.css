@@ -457,7 +457,7 @@ i {
     right: 0;
     background: linear-gradient(to bottom, rgba(20, 38, 75, 0.98), rgba(15, 28, 56, 0.98));
     backdrop-filter: blur(15px);
-    border-radius: 0 0 20px 20px;
+    border-radius:20px;
     max-height: 300px;
     overflow-y: auto;
     z-index: 103;
