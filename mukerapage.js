@@ -138,3 +138,4 @@ searchBox.addEventListener("input", () => {
 
     searchDropdown.style.display = results.length ? "block" : "none";
 });
+ 
