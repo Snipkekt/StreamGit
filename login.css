@@ -11,17 +11,18 @@ body {
 }
 
 .fakebg {
-    padding: 90px;
     background: url('/images/LoginBlurBg.jpg');
     transition: filter 0.5s ease;
+    padding: 100px;
 }
 
 .form {
     background-color: #376a755d;
-    margin: auto;
     padding: 50px;
+    margin: auto;
     border-radius: 15px;
-    width: 400px;
+    min-width: 200px;
+    max-width: 600px;
     height: auto;
     background-color: #3e5063 opacity(40%) blur(3px);
     box-shadow: 0 0 10px rgb(0, 0, 0);
@@ -99,13 +100,16 @@ a {
 }
 
 @media (min-width: 300px) and (max-width: 767px) {
+    body{
+        font-size: 10px;
+    }
     .fakebg {
         padding: 100px;
     }
 
     .form {
         padding: 40px;
-        text-align: center;
+        text-align: left;
         filter: blur(0px);
 
     }
@@ -117,7 +121,6 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-
     .fakebg {
         padding: 100px;
     }
