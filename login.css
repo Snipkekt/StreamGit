@@ -21,7 +21,7 @@ body {
     margin: auto;
     padding: 50px;
     border-radius: 15px;
-    width: 400px;
+    width: 600px;
     height: auto;
     background-color: #3e5063 opacity(40%) blur(3px);
     box-shadow: 0 0 10px rgb(0, 0, 0);
@@ -98,13 +98,14 @@ a {
     margin-left: 250px;
 }
 
-@media (max-width: 1023px) {
-    .form {
-        margin-top: 70px;
+@media (min-width: 300px) and (max-width: 767px) {
+    .fakebg {
+        padding: 100px;
+    }
 
-        width: 600px;
-        height: 550px;
-        text-align: left;
+    .form {
+        padding: 40px;
+        text-align: center;
         filter: blur(0px);
 
     }
@@ -115,15 +116,20 @@ a {
 
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+
     .fakebg {
-        padding: 20px;
+        padding: 100px;
+        padding-top: 200px;
+        justify-items: center;
+        align-items: center;
     }
 
     .form {
-        margin-top: 70px;
-        padding: 40px;
-        text-align: center;
+        width: 600px;
+        height: 550px;
+
+        text-align: left;
         filter: blur(0px);
 
     }
