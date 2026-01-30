@@ -370,3 +370,40 @@ z-index: 102;}
     padding-top:0px;
 }
 
+i {
+    margin-right: 6px;
+}
+
+.EPAGE a i,
+.left a i {
+    width: 18px;
+    text-align: center;
+}
+
+.search-btn i {
+    margin: 0;
+}
+
+.next-link i {
+    font-size: 22px;
+    color: white;
+}
+
+.left a {
+    display: flex;
+    align-items: center;
+    gap: 8px;          /* 👈 controls space between icon & text */
+    padding: 10px 14px;
+    white-space: nowrap;
+}
+
+.left a i {
+    width: auto;      /* ❌ remove fixed width */
+    min-width: 16px;  /* ✔ keeps icons aligned */
+    text-align: center;
+    margin: 0;        /* remove extra margins */
+}
+
+.category {
+    scroll-margin-top: 150px; /* navbar height + small gap */
+}
