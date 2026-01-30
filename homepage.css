@@ -316,25 +316,58 @@ z-index: 102;}
     border-radius: 20px;
     overflow: hidden;
     margin-top: 20px;
-    box-shadow: inset 0 0 50px black;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
     display: flex;
-    align-items: flex-end; /* moves content to bottom */
-    padding-bottom: 40px;
-    /* Add this line to set your image as background */
-    background-image: url("images/h1.jpg"); /* make sure path & name are correct */
+    align-items: flex-end; /* content at bottom */
+    padding: 60px 40px 40px 40px; /* top, right, bottom, left */
+    background-image: url("images/h1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: white; /* default text color */
+    font-family: 'Oswald', 'Gill Sans', 'Trebuchet MS', sans-serif; /* cinematic font for title */
 }
 
-/* Remove the ::after pseudo-element or comment it out */
-.middle .banner-title::after {
-    /* content: ""; */
-    /* position: absolute; */
-    /* inset: 0; */
-    /* background-image: url("images/Guardians\ of\ the\ Galaxy1.jpg"); */
-    /* background-size: cover; */
-    /* background-position: center; */
-    /* filter: brightness(0.6); */
-    /* z-index: 0; */
+/* Banner Content */
+.middle .banner-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* makes text stand out */
 }
+
+/* Hero Title */
+.middle .banner-content h1 {
+    font-size: 3.5rem; /* big and cinematic */
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.1;
+    color: #FFD700; /* gold-like color for cinematic feel */
+}
+
+/* Hero Description */
+.middle .banner-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #f1f1f1; /* soft white for description */
+}
+
+/* Movie Meta Info (rating, genre, year) */
+.middle .banner-content .movie-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Hero Buttons */
+.middle .banner-content .btn {
+    margin-right: 15px;
+    font-weight: bold;
+    padding: 12px 30px;
+    font-size: 1rem;
+}
+
