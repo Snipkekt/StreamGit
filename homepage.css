@@ -592,19 +592,7 @@ i {
 
     /* Search appears on top of navbar */
     .search-box {
-        display: none;
-        position: fixed;
-        top: 15px;
-        left: 20px;
-        right: 80px;
-        width: auto;
-        z-index: 106;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 15px 20px;
-        font-size: 16px;
-        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
-        background-color: rgba(66, 66, 66, 0.95);
+
     }
 
     .search-box.active {
