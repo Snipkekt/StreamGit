@@ -306,12 +306,7 @@ a {
     border-radius: 50px;
 }
 
-.middle .banner-title .banner {
-    background: url("../StreamGit/ghosted/123.jpg");
-    width: 900px;
-    background-size: cover;
-    z-index: 102;
-}
+
 
 /*css*/
 
@@ -332,7 +327,7 @@ a {
 
 .middle .banner-title {
     margin-left: 3px;/* gradi started after the image so there was birght line of the image so i moved the image to match it*/
-    background-image:linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)),url("images/Guardians of the Galaxy1.jpg");
+    background-image:linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)),url("images/h1.jpg");
     background-size: cover;
     background-position: center;
 }
