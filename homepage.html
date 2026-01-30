@@ -1,117 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streamora</title>
-
     <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="responsive-styles.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
     <div id="containerGrid">
-
         <!-- NAVBAR -->
         <section class="navbar">
             <nav class="head">
-
                 <h1 id="logo">
                     <img src="images/image3.png" alt="Streamora Logo">
                 </h1>
-
                 <!-- NAV LINKS -->
                 <div class="EPAGE">
                     <a href="homepage.html">
-                        <i class="fa-solid fa-house"></i> Home
+                        <i class="fa-solid fa-house"></i><span> Home</span>
                     </a>
                     <a href="#movies">
-                        <i class="fa-solid fa-clapperboard"></i> Movie
+                        <i class="fa-solid fa-clapperboard"></i><span> Movie</span>
                     </a>
                     <a href="#series">
-                        <i class="fa-solid fa-tv"></i> Series
+                        <i class="fa-solid fa-tv"></i><span> Series</span>
                     </a>
                     <a href="#animation">
-                        <i class="fa-solid fa-face-smile"></i> Animation
+                        <i class="fa-solid fa-face-smile"></i><span> Animation</span>
                     </a>
                 </div>
-
                 <!-- SEARCH -->
                 <div id="topsearch">
-                    <input type="search" placeholder="Search..." class="search-box">
+                    <input type="search" placeholder="Search movies..." class="search-box">
                     <button class="search-btn">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </div>
-
             </nav>
         </section>
-
-        <!-- LEFT SIDEBAR (UNCHANGED) -->
-        <section class="left">
-            <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
-            <a href="#"><i class="fa-solid fa-compass"></i> Browse</a>
-            <a href="#"><i class="fa-solid fa-fire"></i> New & Popular</a>
-            <a href="#"><i class="fa-solid fa-layer-group"></i> Genres</a>
-            <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+        
+        <!-- LEFT SIDEBAR -->
+        <section class="left mobile-bottom-nav">
+            <a href="#"><i class="fa-solid fa-user"></i><span> Profile</span></a>
+            <a href="#"><i class="fa-solid fa-compass"></i><span> Browse</span></a>
+            <a href="#"><i class="fa-solid fa-fire"></i><span> New & Popular</span></a>
+            <a href="#"><i class="fa-solid fa-layer-group"></i><span> Genres</span></a>
+            <a href="#"><i class="fa-solid fa-gear"></i><span> Settings</span></a>
         </section>
-
+        
         <!-- MIDDLE CONTENT -->
         <section class="middle" id="middle">
             <div class="middle-content">
-
                 <!-- HERO -->
                 <div class="banner-title">
                     <div class="banner-content">
-
                         <h1>GUARDIANS OF THE GALAXY VOL. 3</h1>
-
                         <div class="movie-meta">
                             <span><i class="fa-solid fa-star"></i> 8.2</span>
                             <span>2023</span>
                             <span>Action • Adventure • Sci-Fi</span>
                         </div>
-
-                        <button class="btn primary">
-                            <i class="fa-solid fa-play"></i> Watch Now
-                        </button>
-
-                        <button class="btn secondary">
-                            <i class="fa-solid fa-plus"></i> My List
-                        </button>
-
+                        <p>Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and one of their own - a mission that could mean the end of the Guardians if not successful.</p>
+                        <div class="banner-buttons">
+                            <button class="btn primary">
+                                <i class="fa-solid fa-play"></i> Watch Now
+                            </button>
+                            <button class="btn secondary">
+                                <i class="fa-solid fa-plus"></i> My List
+                            </button>
+                        </div>
                     </div>
                 </div>
-
+                
                 <!-- CATEGORIES -->
                 <div class="category" id="trending">
                     <h2><i class="fa-solid fa-fire"></i> Trending</h2>
                     <div class="thumbCont" id="trendingCont"></div>
                 </div>
-
                 <div class="category" id="movies">
                     <h2><i class="fa-solid fa-clapperboard"></i> Movies</h2>
                     <div class="thumbCont" id="moviesCont"></div>
                 </div>
-
                 <div class="category" id="series">
                     <h2><i class="fa-solid fa-tv"></i> Series</h2>
                     <div class="thumbCont" id="seriesCont"></div>
                 </div>
-
                 <div class="category" id="animation">
                     <h2><i class="fa-solid fa-face-smile"></i> Animation</h2>
                     <div class="thumbCont" id="animationCont"></div>
                 </div>
-
             </div>
         </section>
-
     </div>
-
-    <script src="mukerapage.js"></script>
+    
+    <!-- Load the combined JavaScript file -->
+    <script src="homepage.js"></script>
 </body>
-
 </html>
