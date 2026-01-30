@@ -21,7 +21,7 @@ body {
     margin: auto;
     padding: 50px;
     border-radius: 15px;
-    width: 600px;
+    width: 400px;
     height: auto;
     background-color: #3e5063 opacity(40%) blur(3px);
     box-shadow: 0 0 10px rgb(0, 0, 0);
@@ -120,15 +120,12 @@ a {
 
     .fakebg {
         padding: 100px;
-        padding-top: 200px;
-        justify-items: center;
-        align-items: center;
     }
 
     .form {
+
         width: 600px;
         height: 550px;
-
         text-align: left;
         filter: blur(0px);
 
