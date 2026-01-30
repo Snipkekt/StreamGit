@@ -308,66 +308,65 @@ a {
 z-index: 102;}
 /*css*/
 
-
-/* HERO BANNER */
+/* ------------------ HERO BANNER ------------------ */
 .middle .banner-title {
     position: relative;
-    height: 60vh; /* adjust height as needed */
-    border-radius: 20px;
+    height: 70vh;
+    /* adjust as needed */
     overflow: hidden;
     margin-top: 20px;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 50px black;
     display: flex;
-    align-items: flex-end; /* content at bottom */
-    padding: 60px 40px 40px 40px; /* top, right, bottom, left */
-    background-image: url("images/h1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white; /* default text color */
-    font-family: 'Oswald', 'Gill Sans', 'Trebuchet MS', sans-serif; /* cinematic font for title */
+    align-items: flex-end;
+    /* moves content to the bottom */
+    padding-bottom: 40px;
+    /* spacing from bottom */
 }
 
-/* Banner Content */
+.middle .banner-title {
+    margin-left: 3px;/* gradi started after the image so there was birght line of the image so i moved the image to match it*/
+    background-image:linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)),url("images/h1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 .middle .banner-content {
     position: relative;
     z-index: 1;
+    padding: 30px;
     max-width: 600px;
     color: white;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* makes text stand out */
+    /* optional: animate text appearing from bottom */
+    transform: translateY(0);
 }
 
-/* Hero Title */
 .middle .banner-content h1 {
-    font-size: 3.5rem; /* big and cinematic */
-    font-weight: 800;
-    margin-bottom: 15px;
-    line-height: 1.1;
-    color: #FFD700; /* gold-like color for cinematic feel */
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-/* Hero Description */
 .middle .banner-content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #f1f1f1; /* soft white for description */
+    font-size: 1rem;
+    margin-bottom: 15px;
+    max-width: 500px;
+    line-height: 1.5;
 }
 
-/* Movie Meta Info (rating, genre, year) */
+/* Movie meta info */
 .middle .banner-content .movie-meta {
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
     font-size: 14px;
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.8);
 }
 
-/* Hero Buttons */
+/* Hero buttons */
 .middle .banner-content .btn {
     margin-right: 15px;
-    font-weight: bold;
-    padding: 12px 30px;
-    font-size: 1rem;
+}
+.middle{
+    padding-top:0px;
 }
 
