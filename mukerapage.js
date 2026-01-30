@@ -7,7 +7,7 @@ const allMovie = [
     { title: "The Dark Knight", thumb: "images/MovieThumbs/The Dark Knight.jpg", categories: ["movie"] },
     { title: "Gladiator", thumb: "images/MovieThumbs/Gladiator.jpg", categories: ["movie"] },
     { title: "Raya and the Last Dragon", thumb: "images/MovieThumbs/Raya and the Last Dragon.jpg", categories: ["animation"] },
-    { title: "Avengers Endgame", thumb: "images/MovieThumbs/AvengersEndgame.jpg", categories: ["movie", "trending"] },
+    { title: "Avengers Endgame", thumb: "images/MovieThumbs/Avengers Endgame.jpg", categories: ["movie", "trending"] },
     { title: "Titanic", thumb: "images/MovieThumbs/Titanic.jpg", categories: ["movie"] },
     { title: "Encanto", thumb: "images/MovieThumbs/Encanto.jpg", categories: ["animation"] },
     { title: "The Matrix", thumb: "images/MovieThumbs/The Matrix.jpg", categories: ["movie"] },
@@ -36,75 +36,105 @@ const allMovie = [
 ];
 
 
+// after search
+function movieId(title) {
+    return title
+        .replace(/<br>/g, "")
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-");
+}
 
 
 function renderMovies(list, container) {
     list.forEach(movie => {
-        const movieDiv = document.createElement('div');
-        movieDiv.className = 'movie-item';
+        const movieDiv = document.createElement("div");
+        movieDiv.className = "movie-item";
 
-        const img = document.createElement('img');
+        // after search
+        movieDiv.id = movieId(movie.title);
+        movieDiv.dataset.category = movie.categories[0];
+
+        const img = document.createElement("img");
         img.src = movie.thumb;
-        img.alt = movie.title;
-        img.className = 'thumbnail';
+        img.className = "thumbnail";
 
-        const title = document.createElement('p');
+        const title = document.createElement("p");
         title.innerHTML = movie.title;
-        title.className = 'movie-title';
+        title.className = "movie-title";
 
         movieDiv.appendChild(img);
         movieDiv.appendChild(title);
-
         container.appendChild(movieDiv);
     });
 }
-const trending = allMovie.filter(m => m.categories.includes("trending"));
-const movies = allMovie.filter(m => m.categories.includes("movie"));
-const series = allMovie.filter(m => m.categories.includes("series"));
-const animation = allMovie.filter(m => m.categories.includes("animation"));
-renderMovies(trending, document.getElementById("trendingCont"));
-renderMovies(movies, document.getElementById("moviesCont"));
-renderMovies(series, document.getElementById("seriesCont"));
-renderMovies(animation, document.getElementById("animationCont"));
 
-/* search partt */
+
+// initial render (unchanged)
+renderMovies(allMovie.filter(m => m.categories.includes("trending")), document.getElementById("trendingCont"));
+renderMovies(allMovie.filter(m => m.categories.includes("movie")), document.getElementById("moviesCont"));
+renderMovies(allMovie.filter(m => m.categories.includes("series")), document.getElementById("seriesCont"));
+renderMovies(allMovie.filter(m => m.categories.includes("animation")), document.getElementById("animationCont"));
+
+
+// after search
 const searchBox = document.querySelector(".search-box");
-const searchDropdown = document.getElementById("searchDropdown");
+const searchBtn = document.querySelector(".search-btn");
 
+const searchDropdown = document.createElement("div"); // after search
+searchDropdown.id = "searchDropdown";                 // after search
+document.getElementById("topsearch").appendChild(searchDropdown); // after search
+
+
+// after search
 searchBox.addEventListener("input", () => {
-    const value = searchBox.value.toLowerCase().trim();
+    const q = searchBox.value.toLowerCase();
     searchDropdown.innerHTML = "";
 
-    if (value === "") {
+    if (!q) {
         searchDropdown.style.display = "none";
         return;
     }
 
-    const matches = allMovie.filter(m =>
-        m.title.replace(/<br>/g, " ").toLowerCase().startsWith(value)
+    const results = allMovie.filter(m =>
+        m.title.replace(/<br>/g, "").toLowerCase().startsWith(q)
     );
 
-    if (matches.length === 0) {
-        searchDropdown.style.display = "none";
-        return;
-    }
-
-    matches.forEach(movie => {
+    results.forEach(movie => {
         const div = document.createElement("div");
-        div.className = "search-item";
         div.textContent = movie.title.replace(/<br>/g, " ");
-/*movie poster asay*/
+        div.className = "search-item";
+
         div.onclick = () => {
             searchBox.value = div.textContent;
             searchDropdown.style.display = "none";
 
-            // show result
-            document.getElementById("moviesCont").innerHTML = "";
-            renderMovies([movie], document.getElementById("moviesCont"));
+            const id = movieId(movie.title);
+            const target = document.getElementById(id);
+            if (!target) return;
+
+            const catMap = {
+                trending: "trendingCont",
+                movie: "moviesCont",
+                series: "seriesCont",
+                animation: "animationCont"
+            };
+
+            // after search
+            document.getElementById(catMap[movie.categories[0]])
+                .scrollIntoView({ behavior: "smooth" });
+
+            // after search
+            setTimeout(() => {
+                target.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center",
+                    inline: "center"
+                });
+            }, 300);
         };
 
         searchDropdown.appendChild(div);
     });
 
-    searchDropdown.style.display = "block";
+    searchDropdown.style.display = results.length ? "block" : "none";
 });
