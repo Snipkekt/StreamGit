@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streamora</title>
+
     <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -15,72 +17,92 @@
         <!-- NAVBAR -->
         <section class="navbar">
             <nav class="head">
+
                 <h1 id="logo">
-                    <img src="images/image3.png" alt="Logo">
+                    <img src="images/image3.png" alt="Streamora Logo">
                 </h1>
+
+                <!-- NAV LINKS -->
                 <div class="EPAGE">
-                    <a href="homepage.html" class="one">Home</a>
-                    <a href="#movies" class="two">Movie</a>
-                    <a href="#series" class="three">Series</a>
-                    <a href="#animation" class="four">Animation</a>
+                    <a href="homepage.html">
+                        <i class="fa-solid fa-house"></i> Home
+                    </a>
+                    <a href="#movies">
+                        <i class="fa-solid fa-clapperboard"></i> Movie
+                    </a>
+                    <a href="#series">
+                        <i class="fa-solid fa-tv"></i> Series
+                    </a>
+                    <a href="#animation">
+                        <i class="fa-solid fa-face-smile"></i> Animation
+                    </a>
                 </div>
+
+                <!-- SEARCH -->
                 <div id="topsearch">
                     <input type="search" placeholder="Search..." class="search-box">
-                    <button class="search-btn">🔍</button>
+                    <button class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
                 </div>
+
             </nav>
         </section>
 
-        <!-- LEFT SIDEBAR -->
+        <!-- LEFT SIDEBAR (UNCHANGED) -->
         <section class="left">
-            <a href="#">Profile</a>
-            <a href="#">Browse</a>
-            <a href="#">New & Popular</a>
-            <a href="#">Genres</a>
-            <a href="#">Settings</a>
+            <a href="#"><i class="fa-solid fa-user"></i> Profile</a>
+            <a href="#"><i class="fa-solid fa-compass"></i> Browse</a>
+            <a href="#"><i class="fa-solid fa-fire"></i> New & Popular</a>
+            <a href="#"><i class="fa-solid fa-layer-group"></i> Genres</a>
+            <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
         </section>
 
         <!-- MIDDLE CONTENT -->
         <section class="middle" id="middle">
             <div class="middle-content">
 
-                <!-- HERO BANNER -->
+                <!-- HERO -->
                 <div class="banner-title">
                     <div class="banner-content">
+
                         <h1>GUARDIANS OF THE GALAXY VOL. 3</h1>
-                        <p>The Guardians are back for an epic adventure across the galaxy — Star-Lord, Gamora, Rocket, Groot, and more.</p>
 
                         <div class="movie-meta">
-                            <span>⭐ 8.2</span>
+                            <span><i class="fa-solid fa-star"></i> 8.2</span>
                             <span>2023</span>
                             <span>Action • Adventure • Sci-Fi</span>
                         </div>
 
-                        <button class="btn primary">▶ Watch Now</button>
-                        <button class="btn secondary">＋ My List</button>
-                                        <a href="mukerpage.html">⏩</a>
+                        <button class="btn primary">
+                            <i class="fa-solid fa-play"></i> Watch Now
+                        </button>
+
+                        <button class="btn secondary">
+                            <i class="fa-solid fa-plus"></i> My List
+                        </button>
 
                     </div>
                 </div>
 
-                <!-- MOVIE CATEGORIES -->
+                <!-- CATEGORIES -->
                 <div class="category" id="trending">
-                    <h2>Trending</h2>
+                    <h2><i class="fa-solid fa-fire"></i> Trending</h2>
                     <div class="thumbCont" id="trendingCont"></div>
                 </div>
 
                 <div class="category" id="movies">
-                    <h2>Movies</h2>
+                    <h2><i class="fa-solid fa-clapperboard"></i> Movies</h2>
                     <div class="thumbCont" id="moviesCont"></div>
                 </div>
 
                 <div class="category" id="series">
-                    <h2>Series</h2>
+                    <h2><i class="fa-solid fa-tv"></i> Series</h2>
                     <div class="thumbCont" id="seriesCont"></div>
                 </div>
 
                 <div class="category" id="animation">
-                    <h2>Animation</h2>
+                    <h2><i class="fa-solid fa-face-smile"></i> Animation</h2>
                     <div class="thumbCont" id="animationCont"></div>
                 </div>
 
