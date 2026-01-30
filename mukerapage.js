@@ -66,3 +66,43 @@ renderMovies(trending, document.getElementById("trendingCont"));
 renderMovies(movies, document.getElementById("moviesCont"));
 renderMovies(series, document.getElementById("seriesCont"));
 renderMovies(animation, document.getElementById("animationCont"));
+
+// Search toggle functionality for mobile and tablet
+document.addEventListener('DOMContentLoaded', function() {
+    const searchBtn = document.querySelector('.search-btn');
+    const searchBox = document.querySelector('.search-box');
+    
+    if (searchBtn && searchBox) {
+        // Toggle search box when search button is clicked
+        searchBtn.addEventListener('click', function(e) {
+            // Only toggle on mobile/tablet (screen width <= 1024px)
+            if (window.innerWidth <= 1024) {
+                e.preventDefault();
+                searchBox.classList.toggle('active');
+                
+                // Focus on search box when it appears
+                if (searchBox.classList.contains('active')) {
+                    searchBox.focus();
+                }
+            }
+        });
+        
+        // Close search box when clicking outside
+        document.addEventListener('click', function(e) {
+            if (window.innerWidth <= 1024) {
+                if (!searchBox.contains(e.target) && !searchBtn.contains(e.target)) {
+                    searchBox.classList.remove('active');
+                }
+            }
+        });
+        
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            // Show search box on desktop
+            if (window.innerWidth > 1024) {
+                searchBox.classList.remove('active');
+                searchBox.style.display = '';
+            }
+        });
+    }
+});
