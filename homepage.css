@@ -3,7 +3,11 @@ body {
     padding: 0;
     color: white;
     background: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans',
+        'Gill Sans MT',
+        Calibri,
+        'Trebuchet MS',
+        sans-serif;
 }
 
 a {
@@ -16,10 +20,7 @@ a {
     gap: 10px;
     grid-template-columns: 140px 10fr;
     grid-template-rows: 90px 1fr;
-    grid-template-areas:
-        "H H"
-        "L M"
-        "L M";
+    grid-template-areas: "H H" "L M" "L M";
 }
 
 .navbar {
@@ -34,29 +35,28 @@ a {
     margin-top: 0;
     top: 0;
     backdrop-filter: blur(20px);
-
-
 }
 
 .navbar a {
-    border-radius: 90px;
+    border-radius: 40px;
     background: rgba(255, 255, 255, 0);
     padding: 20px;
-    place-items: center;
+    justify-content: center;
     display: flex;
     flex-direction: row;
     transition: 0.2s;
     min-width: 50px;
     max-width: 0px;
-
 }
+
 .navbar a:hover {
     color: white;
     background: rgba(255, 255, 255, 0.047);
+    box-shadow: inset 0 0 8px rgba(186, 186, 186, 0.238);
 }
+
 .left {
     padding-top: 40px;
-
     /* background: linear-gradient(to bottom, rgb(21, 39, 79), black); */
     background: rgb(15, 28, 56);
     border-radius: 0px 20px 20px 0px;
@@ -66,7 +66,6 @@ a {
     z-index: 99;
     height: 100%;
     width: 140px;
-
 }
 
 .left a {
@@ -80,16 +79,14 @@ a {
     display: flex;
     flex-direction: column;
     width: 100px;
-    transition: 0.2s;
-
+    transition: 0.3s;
 }
 
 .left a:hover {
     color: white;
     background: rgba(255, 255, 255, 0.047);
-
+    box-shadow: inset 0 0 6px rgba(186, 186, 186, 0.238);
 }
-
 
 .middle {
     gap: 10px;
@@ -101,15 +98,11 @@ a {
     box-shadow: inset 0px 0px 50px rgb(0, 0, 0);
     overflow: hidden;
     max-width: 100%;
-
-
-
 }
 
 .head {
     display: flex;
     align-items: center;
-
 }
 
 #logo {
@@ -120,7 +113,6 @@ a {
 #logo img {
     height: 50px;
     width: auto;
-
 }
 
 .btn {
@@ -138,7 +130,6 @@ a {
     font-size: large;
     font-weight: bold;
     box-shadow: 0 0 90px rgba(82, 117, 232, 0.684);
-
 }
 
 .btn:hover {
@@ -147,21 +138,8 @@ a {
     box-shadow: 0 0px 40px rgba(105, 155, 255, 0.512);
 }
 
-/* .EPAGE {
-    display: grid;
-    place-items: center;
-    height: ;
-    width:70vw;
-    border: 2px solid red;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr ;
-    grid-template-areas:
-        "one two three four sbar sb";
-    gap: 100px ;
-    background-color: blanchedalmond;
-} */
+/* .EPAGE { display: grid; place-items: center; height: ; width:70vw; border: 2px solid red; grid-template-columns: 1fr 1fr 1fr 1fr; grid-template-rows: 1fr ; grid-template-areas: "one two three four sbar sb"; gap: 100px ; background-color: blanchedalmond; } */
 .EPAGE {
-
     display: flex;
     flex-direction: row;
     place-items: center;
@@ -172,38 +150,16 @@ a {
     z-index: 101;
 }
 
-
-/* .one {
-    grid-area: one;
-
-}
-
-.two {
-    grid-area: two;
-
-}
-
-.three {
-    grid-area: three;
-
-}
-
-.four {
-    grid-area: four;
-
-} */
-
-
-
+/* .one { grid-area: one; } .two { grid-area: two; } .three { grid-area: three; } .four { grid-area: four; } */
 .search-box,
 .search-btn {
     background-color: rgba(66, 66, 66, 0.314);
-color: lightgrey;    border-radius: 50px;
+    color: lightgrey;
+    border-radius: 50px;
     border: none;
     padding: 13px;
     margin: 8px;
     transition: 0.2s;
-
 }
 
 .search-box:hover,
@@ -212,20 +168,14 @@ color: lightgrey;    border-radius: 50px;
     color: rgb(187, 187, 187);
     background-color: rgba(66, 66, 66, 0.671);
     transform: scale(1.05);
-
 }
-
-
 
 .search-box:hover::placeholder,
 .search-btn:hover::placeholder {
     color: rgb(169, 169, 169);
 }
 
-/* .search-box {
-    grid-area: sbar;
-} */
-
+/* .search-box { grid-area: sbar; } */
 .search-btn {
     /* grid-area: sb; */
     box-shadow: 0 0 70px rgb(75, 132, 255);
@@ -241,74 +191,150 @@ color: lightgrey;    border-radius: 50px;
     overflow-x: auto;
     overflow-y: hidden;
     max-width: 100%;
-
-
+    box-shadow: inset 0 0 20px black;
+    border-radius: 50px 50px 9px 9px;
+    /* background: linear-gradient(to bottom,rgb(10, 13, 20),rgb(21, 38, 69)); */
 }
 
 .thumbnail {
-    margin-top: 30px;
-    margin-left: 5px;
-
+    filter:saturate(0.9);
     width: 216px;
     height: 324px;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     cursor: pointer;
     transition: transform 0.1s;
-    box-shadow: 0 0 20px black;
+    box-shadow: inset 0 0 80px black;
 }
-
-.thumbnail:hover {
-
-    transform: scale(1.05);
-    box-shadow: 0 0px 40px rgba(105, 155, 255, 0.512);
-
+.movie-item:hover .thumbnail{
+    filter:saturate(1.4);
+    transition: .8s;
 }
-
+/* .thumbnail:hover { transform: scale(1.05); box-shadow: 0 -10px 40px rgba(105, 155, 255, 0.512); } */
 #topsearch {
     display: flex;
-    margin-right:40px ;
+    margin-right: 40px;
     align-items: center;
-    gap:10px
-    
+    gap: 10px
 }
 
 /* ----------------------------------------------------------------- */
-/* div for each movie */
+/* div for each movie Thumb and title mnamn */
 .movie-item {
+    margin: 90px 0px 50px 40px;
     display: flex;
     flex-direction: column;
-    /* image on top, title below */
-    align-items: center;
+    align-items: left;
+    height: 100%;
+    width: 216px;
+    /*just like the .thumbnail*/
+    background: #70707010;
+    border-radius:10px 10px 50px 50px ;
+    transition: 0.2s;
+    margin-right: 30px;
 }
+.movie-item:hover {
+    transform: scale(1.05);
+    box-shadow: inset 0 -5px 10px rgba(137, 175, 249, 0.295);
+}
+#trendingCont,
+#moviesCont,
+#seriesCont,
+#animationCont {
+    margin: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    box-shadow: inset 0 0 20px black;
+    border-radius: 50px 50px 9px 9px;
 
+}
 /*movie title for each movie under it*/
 .movie-title {
-    margin-top: 8px;
+    width: 216px;
+    height: 60px;
+    margin-top: 0px;
     font-size: 16px;
     text-align: center;
+    align-content: center;
     color: white;
 }
 
+.movie-item:hover .movie-title {
+    transition: 0.4s;
+    transform: scale(1.12);
+}
+
 /* ---------------------scrollbar effects---------------------------------- */
-#thumbCont::-webkit-scrollbar {
+#trendingCont::-webkit-scrollbar,
+#moviesCont::-webkit-scrollbar,
+#seriesCont::-webkit-scrollbar,
+#animationCont::-webkit-scrollbar {
     opacity: 50%;
     height: 14px;
-
 }
-#thumbCont::-webkit-scrollbar:hover {
+
+#trendingCont::-webkit-scrollbar:hover,
+#moviesCont::-webkit-scrollbar:hover,
+#seriesCont::-webkit-scrollbar:hover,
+#animationCont::-webkit-scrollbar:hover {
     height: 14px;
     opacity: 100%;
 }
 
-#thumbCont::-webkit-scrollbar-track {
+#trendingCont::-webkit-scrollbar-track,
+#moviesCont::-webkit-scrollbar-track,
+#seriesCont::-webkit-scrollbar-track,
+#animationCont::-webkit-scrollbar-track {
     background: rgba(17, 37, 65, 0.537);
-    border-radius: 10px;
-
+    border-radius: 100px;
 }
 
-#thumbCont::-webkit-scrollbar-thumb {
+#trendingCont::-webkit-scrollbar-thumb,
+#moviesCont::-webkit-scrollbar-thumb,
+#seriesCont::-webkit-scrollbar-thumb,
+#animationCont::-webkit-scrollbar-thumb {
     background: rgba(37, 77, 137, 0.7);
     width: 90px;
-    border-radius: 10px;
+    border-radius: 50px;
+}
+.middle .banner-title .banner{
+    background:  url("../StreamGit/ghosted/123.jpg");
+    width: 900px;
+    background-size: cover;
+z-index: 102;}
+/*css*/
+
+
+/* HERO BANNER */
+.middle .banner-title {
+    position: relative;
+    height: 60vh; /* adjust height as needed */
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 20px;
+    box-shadow: inset 0 0 50px black;
+    display: flex;
+    align-items: flex-end; /* moves content to bottom */
+    padding-bottom: 40px;
+    /* Add this line to set your image as background */
+    background-image: url("images/h1.jpg"); /* make sure path & name are correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Remove the ::after pseudo-element or comment it out */
+.middle .banner-title::after {
+    /* content: ""; */
+    /* position: absolute; */
+    /* inset: 0; */
+    /* background-image: url("images/Guardians\ of\ the\ Galaxy1.jpg"); */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* filter: brightness(0.6); */
+    /* z-index: 0; */
 }
