@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         block: "center",
                         inline: "center"
                     });
-                }, 300);
+                }, 400);
 
                 // Close search on mobile after selection
                 if (window.innerWidth <= 1024) {
