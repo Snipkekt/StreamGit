@@ -131,12 +131,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         inline: "center"
                     });
                 }, 400);
-
-                // Close search on mobile after selection
-                if (window.innerWidth <= 1024) {
-                    searchBox.classList.remove('active');
-                    document.body.classList.remove('search-active');
-                }
             };
 
             searchDropdown.appendChild(div);
@@ -151,7 +145,6 @@ document.addEventListener('DOMContentLoaded', function () {
         searchBtn.addEventListener('click', function (e) {
             // Only toggle on mobile/tablet (screen width <= 1024px)
             if (window.innerWidth <= 1024) {
-                e.preventDefault();
                 searchBox.classList.toggle('active');
 
                 // Add/remove search-active class to body to hide navbar icons
