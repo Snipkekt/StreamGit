@@ -18,11 +18,10 @@ a {
 #containerGrid {
     display: grid;
     gap: 10px;
-    grid-template-columns: 140px 10fr;
+    grid-template-columns: 140px 1fr;
     grid-template-rows: 90px 1fr;
     grid-template-areas: 
     "H H" 
-    "L M" 
     "L M";
 }
 
