@@ -74,9 +74,15 @@ renderMovies(allMovie.filter(m => m.categories.includes("movie")), document.getE
 renderMovies(allMovie.filter(m => m.categories.includes("series")), document.getElementById("seriesCont"));
 renderMovies(allMovie.filter(m => m.categories.includes("animation")), document.getElementById("animationCont"));
 
+const catMap = {
+    trending: "trendingCont",
+    movie: "moviesCont",
+    series: "seriesCont",
+    animation: "animationCont"
+};
 
 // Wait for DOM to be fully loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const searchBox = document.querySelector(".search-box");
     const searchBtn = document.querySelector(".search-btn");
     const topSearchDiv = document.getElementById("topsearch");
@@ -104,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const div = document.createElement("div");
             div.textContent = movie.title.replace(/<br>/g, " ");
             div.className = "search-item";
-
+            //clickablity here
             div.onclick = () => {
                 searchBox.value = div.textContent;
                 searchDropdown.style.display = "none";
@@ -112,17 +118,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 const id = movieId(movie.title);
                 const target = document.getElementById(id);
                 if (!target) return;
-
-                const catMap = {
-                    trending: "trendingCont",
-                    movie: "moviesCont",
-                    series: "seriesCont",
-                    animation: "animationCont"
-                };
+                //catmap was here
 
                 // Scroll to category container
-                document.getElementById(catMap[movie.categories[0]])
-                    .scrollIntoView({ behavior: "smooth" });
+                document.getElementById(catMap[movie.categories[0]]).scrollIntoView({ behavior: "smooth" });
 
                 // Then scroll to specific movie
                 setTimeout(() => {
@@ -149,12 +148,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile/Tablet search toggle functionality
     if (searchBtn && searchBox) {
         // Toggle search box when search button is clicked
-        searchBtn.addEventListener('click', function(e) {
+        searchBtn.addEventListener('click', function (e) {
             // Only toggle on mobile/tablet (screen width <= 1024px)
             if (window.innerWidth <= 1024) {
                 e.preventDefault();
                 searchBox.classList.toggle('active');
-                
+
                 // Add/remove search-active class to body to hide navbar icons
                 if (searchBox.classList.contains('active')) {
                     document.body.classList.add('search-active');
@@ -164,13 +163,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
-        
+
         // Close search box when clicking outside
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             if (window.innerWidth <= 1024) {
                 // Check if click is outside both search box, dropdown, and search button
-                if (!searchBox.contains(e.target) && 
-                    !searchBtn.contains(e.target) && 
+                if (!searchBox.contains(e.target) &&
+                    !searchBtn.contains(e.target) &&
                     !searchDropdown.contains(e.target)) {
                     searchBox.classList.remove('active');
                     document.body.classList.remove('search-active');
@@ -178,9 +177,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
-        
+
         // Handle window resize
-        window.addEventListener('resize', function() {
+        window.addEventListener('resize', function () {
             // Show search box on desktop, hide on mobile
             if (window.innerWidth > 1024) {
                 searchBox.classList.remove('active');
@@ -191,8 +190,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Close dropdown when clicking outside (for all screen sizes)
-    document.addEventListener('click', function(e) {
-        if (!searchBox.contains(e.target) && 
+    document.addEventListener('click', function (e) {
+        if (!searchBox.contains(e.target) &&
             !searchDropdown.contains(e.target) &&
             !searchBtn.contains(e.target)) {
             searchDropdown.style.display = 'none';
