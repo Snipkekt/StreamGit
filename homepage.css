@@ -425,7 +425,253 @@ i {
     scroll-margin-top: 150px;
 }
 
+/* ========================================== */
+/* DESKTOP VIEW (above 1024px) */
+/* ========================================== */
+@media screen and (min-width: 1025px) {
+    /* Ensure search-active class doesn't affect desktop */
+    .search-active .navbar .EPAGE,
+    .search-active .navbar #logo {
+        opacity: 1;
+        pointer-events: auto;
+    }
 
+    /* Desktop search stays in normal position */
+    .search-box {
+        display: block;
+        position: static;
+        width: auto;
+        margin: 8px;
+    }
+
+    /* No special handling needed for desktop */
+    body.search-active {
+        /* Desktop is unaffected */
+    }
+}
+
+/* Search Dropdown Styling */
+/* ========================================== */
+/* DESKTOP VIEW (above 1024px) */
+/* ========================================== */
+@media screen and (min-width: 1025px) {
+    /* Ensure search-active class doesn't affect desktop */
+    .search-active .navbar .EPAGE,
+    .search-active .navbar #logo {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Desktop search stays in normal position */
+    .search-box {
+        display: block;
+        position: static;
+        width: auto;
+        margin: 8px;
+    }
+}
+
+/* Search Dropdown Styling */
+#searchDropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(20, 38, 75, 0.98), rgba(15, 28, 56, 0.98));
+    backdrop-filter: blur(15px);
+    border-radius:20px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 103;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    margin-top: 5px;
+    border: 1px solid rgba(82, 117, 232, 0.3);
+}
+
+.search-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.search-item:hover {
+    background: linear-gradient(to right, rgba(49, 100, 201, 0.4), rgba(82, 117, 232, 0.2));
+    padding-left: 30px;
+    color: white;
+    border-left: 3px solid rgb(82, 117, 232);
+}
+
+.search-item:last-child {
+    border-bottom: none;
+    border-radius: 0 0 20px 20px;
+}
+
+#topsearch {
+    position: relative;
+}
+
+/* Improved search box styling */
+.search-box {
+    background-color: rgba(66, 66, 66, 0.4);
+    color: white;
+    border-radius: 50px;
+    border: 1px solid rgba(82, 117, 232, 0.3);
+    padding: 13px 20px;
+    margin: 8px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    min-width: 250px;
+}
+
+.search-box:focus {
+    outline: none;
+    background-color: rgba(66, 66, 66, 0.6);
+    border-color: rgba(82, 117, 232, 0.6);
+    box-shadow: 0 0 20px rgba(82, 117, 232, 0.4);
+}
+
+.search-box::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Search button - hide text, show only icon */
+.search-btn {
+    position: relative;
+    background: linear-gradient(135deg, rgba(49, 100, 201, 0.8), rgba(82, 117, 232, 0.8));
+    color: white;
+    border-radius: 50%;
+    border: none;
+    padding: 15px;
+    margin: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 30px rgba(75, 132, 255, 0.5);
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background: linear-gradient(135deg, rgb(49, 100, 201), rgb(82, 117, 232));
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(105, 155, 255, 0.7);
+}
+
+.search-btn i {
+    margin: 0;
+}
+
+/* Hide search button text on all devices */
+.search-btn span {
+    display: none;
+}
+#searchDropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(20, 38, 75, 0.98), rgba(15, 28, 56, 0.98));
+    backdrop-filter: blur(15px);
+    border-radius:20px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 103;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    margin-top: 5px;
+    border: 1px solid rgba(82, 117, 232, 0.3);
+}
+
+.search-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.search-item:hover {
+    background: linear-gradient(to right, rgba(49, 100, 201, 0.4), rgba(82, 117, 232, 0.2));
+    padding-left: 30px;
+    color: white;
+    border-left: 3px solid rgb(82, 117, 232);
+}
+
+.search-item:last-child {
+    border-bottom: none;
+    border-radius: 0 0 20px 20px;
+}
+
+#topsearch {
+    position: relative;
+}
+
+/* Improved search box styling */
+.search-box {
+    background-color: rgba(66, 66, 66, 0.4);
+    color: white;
+    border-radius: 50px;
+    border: 1px solid rgba(82, 117, 232, 0.3);
+    padding: 13px 20px;
+    margin: 8px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    min-width: 250px;
+}
+
+.search-box:focus {
+    outline: none;
+    background-color: rgba(66, 66, 66, 0.6);
+    border-color: rgba(82, 117, 232, 0.6);
+    box-shadow: 0 0 20px rgba(82, 117, 232, 0.4);
+}
+
+.search-box::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Search button - hide text, show only icon */
+.search-btn {
+    position: relative;
+    background: linear-gradient(135deg, rgba(49, 100, 201, 0.8), rgba(82, 117, 232, 0.8));
+    color: white;
+    border-radius: 50%;
+    border: none;
+    padding: 15px;
+    margin: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 30px rgba(75, 132, 255, 0.5);
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background: linear-gradient(135deg, rgb(49, 100, 201), rgb(82, 117, 232));
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(105, 155, 255, 0.7);
+}
+
+.search-btn i {
+    margin: 0;
+}
+
+/* Hide search button text on all devices */
+.search-btn span {
+    display: none;
+}
 
 /* ========================================== */
 /* TABLET VIEW (768px - 1024px) */
